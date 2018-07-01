@@ -71,6 +71,7 @@
     <div class="container">
       <div class="row">
 
+        <!-- Melee Notes -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
             <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
@@ -97,6 +98,7 @@
           </div>
         </div>
 
+        <!-- Twitch Platform Fighters -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
             <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
@@ -114,6 +116,7 @@
           </div>
         </div>
 
+        <!-- Melee Calculator -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
             <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
@@ -139,8 +142,10 @@
         </div>
 
       </div>
+
       <div class="row" style="padding-top: 10px;">
 
+        <!-- CRUD Music -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
             <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
@@ -157,13 +162,14 @@
             <p class="projects-grid">A simple CRUD app where a user can create, select, update,
               and delete artist and album records.</p>
             <button class="btn">
-              <a href="#" style="color: inherit;">
+              <a href="https://github.com/RodneyMcQuain/CRUD-Music" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
               </a>
             </button>
           </div>
         </div>
 
+        <!-- PHP Login -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
             <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
