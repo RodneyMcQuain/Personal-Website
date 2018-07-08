@@ -196,6 +196,7 @@
       <div class="page-header">
         <h1><span id="contact"></span>Contact</h1>
       </div>
+
       <div style="width: 500px;" class="center-container projects-border">
         <form action="index.php#contact" method="POST">
           <div class="contact-container">
@@ -251,7 +252,7 @@
                 exit();
               }
 
-              $mailTo = "somebody3210@protonmail.com";
+              $mailTo = "rodneymcquain95@gmail.com";
               $headers = 'MIME-Version: 1.0' . "\r\n" .
                          'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
                          'X-Priority: 1' . "\r\n" .
