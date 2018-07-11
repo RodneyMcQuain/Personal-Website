@@ -175,11 +175,13 @@
             <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">PHP</span>
+              <span class="language-tag">JavaScript</span>
               <span class="language-tag">MySQL</span>
             </div>
             <h3>PHP Login System</h3>
             <p class="projects-grid">Simple template PHP login system using MySQL that takes the user
-            to a welcome page with their username and a logout button.</p>
+            to a welcome page with their username and a logout button. Some other features include password
+            hashing and regular expressions for live password validation.</p>
             <button class="btn">
               <a href="https://github.com/RodneyMcQuain/PHP-Login-System" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
