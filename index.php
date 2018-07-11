@@ -103,7 +103,7 @@
           <div class="projects-border">
             <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
-              <span class="language-tag">Javascript</span>
+              <span class="language-tag">JavaScript</span>
             </div>
             <h3>Twitch Platform Fighters</h3>
             <p class="projects-grid">A chrome extension using twitch API that quickly links to streams for platform fighting games,
@@ -151,7 +151,7 @@
             <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">C#</span>
-              <span class="language-tag">Javascript</span>
+              <span class="language-tag">JavaScript</span>
               <span class="language-tag">ASP.NET</span>
               <span class="language-tag">Bootstrap</span>
             </div>
