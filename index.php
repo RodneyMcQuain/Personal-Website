@@ -193,6 +193,28 @@
       </div>
     </div>
 
+    <!-- Contact Modal -->
+    <div class="modal" ID="aModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title" id="pModalTitle">Contact Form</h2>
+          </div>
+
+          <div class="modal-body">
+            <p id="pModalBody"></p>
+          </div>
+
+          <div class="modal-footer">
+            <button id="btModalCloseButton" class="btn" data-dismiss="modal">
+              <span class="fa fa-times" aria-hidden="true"></span> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact -->
     <div class="container">
       <div class="page-header">
@@ -230,27 +252,35 @@
               $subject = $_POST['subject'];
               $message = $_POST['message'];
 
-              $error = "";
-              if (empty($name))
-                $error .= "Name is required, ";
+              if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
+        ?>
 
-              if (empty($emailFrom))
-                $error .= "Email is required, ";
+              <script>
+                modalBody = document.getElementById("pModalBody");
+                modalBody.innerHTML = "All fields must be filled in.";
 
-              if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL))
-                $error .= "Email address is not valid, ";
+                $(function() {
+                  $('#aModal').modal('show');
+                });
+              </script>
 
-              if (empty($subject))
-                $error .= "Subject is required, ";
+        <?php
+                exit();
+              }
 
-              if (empty($message))
-                $error .= "Feedback is required, ";
+              if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
+        ?>
 
-              if(!empty($error)) {
-                echo '<script type="text/javascript">
-                      alert(Error(s): "' .$error. '");
-                      </script>';
+                <script>
+                  modalBody = document.getElementById("pModalBody");
+                  modalBody.innerHTML = "Invalid email address.";
 
+                  $(function() {
+                    $('#aModal').modal('show');
+                  });
+                </script>
+
+        <?php
                 exit();
               }
 
@@ -264,13 +294,32 @@
               $txt = "Received an email from " .$name. " at " .$emailFrom. " from My Website <br/><br/>" .$message;
 
               if (mail($mailTo, $subject, $txt, $headers)) {
-                  echo "<script type=\"text/javascript\">".
-                  "alert('Email sent successfully. Thank you!');".
-                  "</script>";
+        ?>
+
+                <script>
+                  modalBody = document.getElementById("pModalBody");
+                  modalBody.innerHTML = "Email sent successfully, thank you.";
+
+                  $(function() {
+                    $('#aModal').modal('show');
+                  });
+                </script>
+
+        <?php
               } else {
-                  echo "<script type=\"text/javascript\">".
-                  "alert('Error sending email. Try again.');".
-                  "</script>";
+        ?>
+
+                <script>
+                  modalBody = document.getElementById("pModalBody");
+                  modalBody.innerHTML = "Error sending email, try again. " +
+                    "You can directly send an email to me at rodneymcqain95@gmail.com.";
+
+                  $(function() {
+                    $('#aModal').modal('show');
+                  });
+                </script>
+
+        <?php
               }
             }
           ?>
