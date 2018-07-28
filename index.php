@@ -253,34 +253,32 @@
               $message = $_POST['message'];
 
               if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
-        ?>
+                echo "
+                  <script type=\"text/javascript\">
+                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody.innerHTML = \"All fields must be filled in.\";
 
-              <script>
-                modalBody = document.getElementById("pModalBody");
-                modalBody.innerHTML = "All fields must be filled in.";
+                    $(function() {
+                      $('#aModal').modal('show');
+                    });
+                  </script>
+                ";
 
-                $(function() {
-                  $('#aModal').modal('show');
-                });
-              </script>
-
-        <?php
                 exit();
               }
 
               if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
-        ?>
+                echo "
+                  <script type=\"text/javascript\">
+                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody.innerHTML = \"Invalid email address.\";
 
-                <script>
-                  modalBody = document.getElementById("pModalBody");
-                  modalBody.innerHTML = "Invalid email address.";
+                    $(function() {
+                      $('#aModal').modal('show');
+                    });
+                  </script>
+                ";
 
-                  $(function() {
-                    $('#aModal').modal('show');
-                  });
-                </script>
-
-        <?php
                 exit();
               }
 
@@ -294,32 +292,28 @@
               $txt = "Received an email from " .$name. " at " .$emailFrom. " from My Website <br/><br/>" .$message;
 
               if (mail($mailTo, $subject, $txt, $headers)) {
-        ?>
+                echo "
+                  <script type=\"text/javascript\">
+                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody.innerHTML = \"Email sent successfully, thank you.\";
 
-                <script>
-                  modalBody = document.getElementById("pModalBody");
-                  modalBody.innerHTML = "Email sent successfully, thank you.";
-
-                  $(function() {
-                    $('#aModal').modal('show');
-                  });
-                </script>
-
-        <?php
+                    $(function() {
+                      $('#aModal').modal('show');
+                    });
+                  </script>
+                ";
               } else {
-        ?>
+                echo "
+                  <script type=\"text/javascript\">
+                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody.innerHTML = \"Error sending email, try again. \" +
+                      \"You can directly send an email to me at rodneymcqain95@gmail.com.\";
 
-                <script>
-                  modalBody = document.getElementById("pModalBody");
-                  modalBody.innerHTML = "Error sending email, try again. " +
-                    "You can directly send an email to me at rodneymcqain95@gmail.com.";
-
-                  $(function() {
-                    $('#aModal').modal('show');
-                  });
-                </script>
-
-        <?php
+                    $(function() {
+                      $('#aModal').modal('show');
+                    });
+                  </script>
+                ";
               }
             }
           ?>
