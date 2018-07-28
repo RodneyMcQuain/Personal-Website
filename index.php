@@ -224,19 +224,19 @@
       <div style="width: 500px;" class="center-container projects-border">
         <form action="index.php#contact" method="POST">
           <div class="contact-container">
-            <input type="text" name="name" class="form-control input-lg" placeholder="Full Name">
+            <input type="text" name="name" class="form-control input-lg" placeholder="Full Name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>">
           </div>
 
           <div class="contact-container">
-                <input type="text" name="email" class="form-control input-lg" placeholder="E-Mail">
+                <input type="text" name="email" class="form-control input-lg" placeholder="E-Mail" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>">
             </div>
 
             <div class="contact-container">
-                <input type="text" name="subject" class="form-control input-lg" placeholder="Subject">
+                <input type="text" name="subject" class="form-control input-lg" placeholder="Subject" value="<?php echo isset($_POST['subject']) ? $_POST['subject'] : '' ?>">
             </div>
 
             <div class="contact-container">
-                <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"></textarea>
+                <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"><?php echo isset($_POST['message']) ? $_POST['message'] : '' ?></textarea>
             </div>
 
             <div class="feedback">
