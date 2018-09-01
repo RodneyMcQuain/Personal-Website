@@ -152,7 +152,7 @@
               <span class="language-tag">Bootstrap</span>
             </div>
             <div class="language-tag" style="padding-top: 0;">
-              <span class="language-tag">MS SQL Server</span>
+              <span class="language-tag">SQL Server</span>
             </div>
             <h3>CRUD Music</h3>
             <p class="projects-grid">A simple CRUD app where a user can create, select, update,
