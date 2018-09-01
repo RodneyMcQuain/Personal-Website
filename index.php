@@ -116,26 +116,22 @@
           </div>
         </div>
 
-        <!-- Melee Calculator -->
+        <!-- West Virginia RV -->
         <div class="col-md-4 projects-border">
           <div class="projects-border">
-            <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">Java</span>
+              <span class="language-tag">FXML</span>
+              <span class="language-tag">MySQL</span>
             </div>
             <h3>Melee Calculator</h3>
-            <p class="projects-grid">The Melee Calculator is a calculator for competitive Super
-            Smash Bros. Melee players. It calculates various useful formulas
-            that are not easily solved by hand, such as knockback, hitstun, hitlag,
-            stale move negation, and frame advantage on block, hit, and Amsah Tech.</p>
+            <p class="projects-grid">I made this project to be used for a small business opportunity with instruction from a client.
+              Some features include a functional back button, view of all clients, client bills, and utility bills, recognition of
+              unpaid clients (based on weekly or monthly bill periods), and various calculations relating to revenue.</p>
             <button class="btn">
-              <a href="https://github.com/RodneyMcQuain/Melee-Calculator" style="color: inherit;">
+              <a href="https://github.com/RodneyMcQuain/West-Virginia-RV" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
-              </a>
-            </button>
-            <button class="btn">
-              <a href="#" class="projects-grid" style="color: inherit;">
-                <span class="glyphicon glyphicon-download-alt projects-grid"> Download</span>
               </a>
             </button>
           </div>
@@ -164,6 +160,31 @@
             <button class="btn">
               <a href="https://github.com/RodneyMcQuain/CRUD-Music" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Melee Calculator -->
+        <div class="col-md-4 projects-border">
+          <div class="projects-border">
+            <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <div class="language-tag">
+              <span class="language-tag">Java</span>
+            </div>
+            <h3>Melee Calculator</h3>
+            <p class="projects-grid">The Melee Calculator is a calculator for competitive Super
+            Smash Bros. Melee players. It calculates various useful formulas
+            that are not easily solved by hand, such as knockback, hitstun, hitlag,
+            stale move negation, and frame advantage on block, hit, and Amsah Tech.</p>
+            <button class="btn">
+              <a href="https://github.com/RodneyMcQuain/Melee-Calculator" style="color: inherit;">
+                <span class="fa fa-github projects-grid"> Github</span>
+              </a>
+            </button>
+            <button class="btn">
+              <a href="#" class="projects-grid" style="color: inherit;">
+                <span class="glyphicon glyphicon-download-alt projects-grid"> Download</span>
               </a>
             </button>
           </div>
