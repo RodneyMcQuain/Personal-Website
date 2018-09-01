@@ -67,6 +67,10 @@ div {
   padding: 10px;
 }
 
+.projects-border div:hover {
+  transform: scale(1.02);
+}
+
 .footer p {
   color: #f2f2f2;
 }
