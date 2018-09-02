@@ -125,7 +125,7 @@
               <span class="language-tag">FXML</span>
               <span class="language-tag">MySQL</span>
             </div>
-            <h3>Melee Calculator</h3>
+            <h3>West Virginia RV</h3>
             <p class="projects-grid">I made this project to be used for a small business opportunity with instruction from a client.
               Some features include a functional back button, view of all clients, client bills, and utility bills, recognition of
               unpaid clients (based on weekly or monthly bill periods), and various calculations relating to revenue.</p>
