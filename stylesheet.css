@@ -95,13 +95,17 @@ h1.header {
   text-shadow: 2px 2px black;
 }
 
+div.contact-container {
+  width: 500px;
+}
+
 .contact-container div {
   padding: 10px;
 }
 
 .center-container {
-    margin: 0 auto;
-    padding: 10px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body {
