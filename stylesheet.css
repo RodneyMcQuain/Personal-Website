@@ -50,6 +50,10 @@ button, div {
   border: 1px solid #f2f2f2;
 }
 
+.-curved-border {
+  border-radius: 2.5%;
+}
+
 .projects-grid p, span, a {
   font-size: 15px;
 }
