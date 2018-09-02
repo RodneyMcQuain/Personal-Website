@@ -73,7 +73,7 @@
 
         <!-- Melee Notes -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">Java</span>
@@ -100,7 +100,7 @@
 
         <!-- Twitch Platform Fighters -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">JavaScript</span>
@@ -118,7 +118,7 @@
 
         <!-- West Virginia RV -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">Java</span>
@@ -143,7 +143,7 @@
 
         <!-- CRUD Music -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">C#</span>
@@ -167,7 +167,7 @@
 
         <!-- Melee Calculator -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">Java</span>
@@ -192,7 +192,7 @@
 
         <!-- PHP Login -->
         <div class="col-md-4 project-container">
-          <div class="-border">
+          <div class="-curved-border">
             <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
             <div class="language-tag">
               <span class="language-tag">PHP</span>
@@ -242,7 +242,7 @@
         <h1><span id="contact"></span>Contact</h1>
       </div>
 
-      <div style="width: 500px;" class="center-container contact-container -border">
+      <div class="center-container contact-container -curved-border">
         <form action="index.php#contact" method="POST">
           <div class="-border">
             <input type="text" name="name" class="form-control input-lg" placeholder="Full Name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>">
