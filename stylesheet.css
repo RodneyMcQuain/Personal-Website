@@ -42,11 +42,7 @@ p, span {
   filter: brightness(90%);
 }
 
-button {
-  text-align: center;
-}
-
-div {
+button, div {
   text-align: center;
 }
 
@@ -97,7 +93,6 @@ h1.header {
 
 .contact-container {
   padding: 10px;
-  text-align: center;
 }
 
 .center-container {
