@@ -155,8 +155,8 @@
               <span class="language-tag">SQL Server</span>
             </div>
             <h3>CRUD Music</h3>
-            <p class="projects-grid">A simple CRUD app where a user can create, select, update,
-              and delete artist and album records.</p>
+            <p class="projects-grid">A simple CRUD app with user login where a user can create, select, update, and delete artist and album
+              records. As well as displaying a random artist and album to listen to each day based on the user's records.</p>
             <button class="btn">
               <a href="https://github.com/RodneyMcQuain/CRUD-Music" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
