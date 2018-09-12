@@ -28,6 +28,12 @@
   border-bottom: 3px solid #f2f2f2;
 }
 
+#banner-img {
+  background-image: url(assets/images/code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
   position: relative;
 }
