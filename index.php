@@ -72,7 +72,7 @@
       <div class="row">
 
         <!-- Melee Notes -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
@@ -99,7 +99,7 @@
         </div>
 
         <!-- Twitch Platform Fighters -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
@@ -117,7 +117,7 @@
         </div>
 
         <!-- West Virginia RV -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
@@ -142,7 +142,7 @@
       <div class="row" style="padding-top: 10px;">
 
         <!-- CRUD Music -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
@@ -166,7 +166,7 @@
         </div>
 
         <!-- Melee Calculator -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
@@ -191,7 +191,7 @@
         </div>
 
         <!-- PHP Login -->
-        <div class="col-md-4 project-container">
+        <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
             <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
