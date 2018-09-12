@@ -34,7 +34,7 @@
       </div>
     </nav>
 
-    <div class="img-fluid" style="background-image: url(assets/images/code.jpg); background-repeat: no-repeat;">
+    <div class="img-fluid" id="banner-img">
       <div style="padding: 1%;">
         <img src="assets/images/me.jpg" class="img-fluid img-circle img-thumbnail" style="max-width: 100%;">
         <h1 class="header" style="margin-top: 10px;">Rodney McQuain</h1>
