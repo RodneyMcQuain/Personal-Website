@@ -12,7 +12,7 @@
 
   <body dataspy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-fixed-top navbar-inverse" id="nav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-nav">
