@@ -15,7 +15,7 @@
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-nav">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -23,9 +23,9 @@
         </div>
 
         <div>
-          <div class="collapse navbar-collapse" id="myNav">
+          <div class="collapse navbar-collapse" id="my-nav">
             <ul class="nav navbar-nav">
-              <li><a class="anchor" href="#aboutMe">About Me</a></li>
+              <li><a class="anchor" href="#about-me">About Me</a></li>
               <li><a class="anchor" href="#projects">Projects</a></li>
               <li><a class="anchor" href="#contact">Contact</a></li>
             </ul>
@@ -44,7 +44,7 @@
     <!-- About Me -->
     <div class="container">
       <div class="page-header">
-        <h1><span id="aboutMe"></span>About Me</h1>
+        <h1><span id="about-me"></span>About Me</h1>
       </div>
       <p>
         I recently received my AS in software development from Ivy Tech Community College and I currently attend
@@ -220,15 +220,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title" id="pModalTitle">Contact Form</h2>
+            <h2 class="modal-title" id="modal-title">Contact Form</h2>
           </div>
 
           <div class="modal-body">
-            <p id="pModalBody"></p>
+            <p id="modal-body"></p>
           </div>
 
           <div class="modal-footer">
-            <button id="btModalCloseButton" class="btn" data-dismiss="modal">
+            <button id="btn-modal-close" class="btn" data-dismiss="modal">
               <span class="fa fa-times" aria-hidden="true"></span> Close
             </button>
           </div>
@@ -276,7 +276,7 @@
               if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
                 echo "
                   <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody = document.getElementById(\"modal-body\");
                     modalBody.innerHTML = \"All fields must be filled in.\";
 
                     $(function() {
@@ -291,7 +291,7 @@
               if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
                 echo "
                   <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody = document.getElementById(\"modal-body\");
                     modalBody.innerHTML = \"Invalid email address.\";
 
                     $(function() {
@@ -315,7 +315,7 @@
               if (mail($mailTo, $subject, $txt, $headers)) {
                 echo "
                   <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody = document.getElementById(\"modal-body\");
                     modalBody.innerHTML = \"Email sent successfully, thank you.\";
 
                     $(function() {
@@ -326,7 +326,7 @@
               } else {
                 echo "
                   <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"pModalBody\");
+                    modalBody = document.getElementById(\"modal-body\");
                     modalBody.innerHTML = \"Error sending email, try again. \" +
                       \"You can directly send an email to me at rodneymcqain95@gmail.com.\";
 
@@ -368,7 +368,7 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $('body').scrollspy({
-          target: '#myNav',
+          target: '#my-nav',
           offset: 75
         });
       });
