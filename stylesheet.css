@@ -108,6 +108,10 @@ div.contact-container {
   padding: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   padding-top: 50px;
