@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 
 p, span {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -87,7 +87,7 @@ div.project-container {
 }
 
 .project-container p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer p {
