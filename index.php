@@ -74,7 +74,7 @@
         <!-- Melee Notes -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">Java</span>
               <span class="language-tag">JUnit</span>
@@ -101,7 +101,7 @@
         <!-- Twitch Platform Fighters -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">JavaScript</span>
             </div>
@@ -119,7 +119,7 @@
         <!-- West Virginia RV -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">Java</span>
               <span class="language-tag">FXML</span>
@@ -144,7 +144,7 @@
         <!-- CRUD Music -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">C#</span>
               <span class="language-tag">JavaScript</span>
@@ -168,7 +168,7 @@
         <!-- Melee Calculator -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">Java</span>
             </div>
@@ -193,7 +193,7 @@
         <!-- PHP Login -->
         <div class="col-md-4 project-container">
           <div class="-curved-border">
-            <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid" style="max-width: 100%;">
+            <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">PHP</span>
               <span class="language-tag">JavaScript</span>
