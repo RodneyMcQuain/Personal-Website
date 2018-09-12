@@ -7,6 +7,10 @@
     src: url('../fonts/BebasNeue/BebasNeue Regular.otf') format('opentype');
 }
 
+#nav {
+  opacity: .95;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
