@@ -70,6 +70,10 @@ button, div {
   padding: 10px;
 }
 
+div.project-container {
+  margin: 10px 0;
+}
+
 .project-container div:hover {
   transform: scale(1.02);
 }
