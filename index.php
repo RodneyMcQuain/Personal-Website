@@ -139,7 +139,7 @@
 
       </div>
 
-      <div class="row" style="padding-top: 10px;">
+      <div class="row" style="padding-top: 10px; display: none"; id="row-2">
 
         <!-- CRUD Music -->
         <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
@@ -212,6 +212,13 @@
         </div>
 
       </div>
+    </div>
+
+    <script src="projectDropdown.js" type="text/javascript"></script>
+    <div>
+      <button id="project-dropdown">
+        <span class="fa fa-angle-double-down"/>
+      </button>
     </div>
 
     <!-- Contact Modal -->
