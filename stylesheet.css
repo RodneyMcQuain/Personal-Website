@@ -54,6 +54,10 @@ p, span {
   font-family: 'Work Sans', sans-serif;
 }
 
+textarea {
+  resize: none;
+}
+
 .btn:hover {
   filter: brightness(90%);
   transform: scale(1.02);
