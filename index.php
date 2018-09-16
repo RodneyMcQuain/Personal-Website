@@ -71,22 +71,24 @@
     <div class="container">
       <div class="row">
 
-        <!-- Melee Notes -->
+        <!-- West Virginia RV -->
         <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
-            <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid">
+            <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">Java</span>
-              <span class="language-tag">JUnit</span>
-              <span class="language-tag">SQLite</span>
+              <span class="language-tag">FXML</span>
+              <span class="language-tag">MySQL</span>
             </div>
-            <h3>Melee Notes</h3>
-            <p class="projects-grid">Melee Notes is a note app for competitive Super Smash Bros. Melee players.
-            It lets users record tournaments, sets, and games taking data from these records to query statistics based
-            on user specifications for more than 5 different fields.  The app also allows for notes to be taken
-            about players, characters, analysis, and mentality alongside with reports on tournaments and money earned.</p>
-            <button class="btn btn-dark">
-              <a href="https://github.com/RodneyMcQuain/Melee-Notes" style="color: inherit;">
+            <h3>West Virginia RV</h3>
+            <p class="projects-grid">A small business opportunity in West Virginia arose where outsourced laborers needed
+              close by rental property to put their recreational vehicles. So, I made this program to aid in that with
+              instruction from my father (a non-programmer) about what it should contain and how it should function.
+              The main purpose of this app is to keep track of a laborer's property position, contact information, bills,
+              and payment status (based on weekly or monthly periods); as well as the general upkeep and utility bills
+              for the property as a whole.</p>
+            <button class="btn">
+              <a href="https://github.com/RodneyMcQuain/West-Virginia-RV" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
               </a>
             </button>
@@ -111,21 +113,22 @@
           </div>
         </div>
 
-        <!-- West Virginia RV -->
+        <!-- Melee Notes -->
         <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
           <div class="-curved-border">
-            <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid">
+            <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid">
             <div class="language-tag">
               <span class="language-tag">Java</span>
-              <span class="language-tag">FXML</span>
-              <span class="language-tag">MySQL</span>
+              <span class="language-tag">JUnit</span>
+              <span class="language-tag">SQLite</span>
             </div>
-            <h3>West Virginia RV</h3>
-            <p class="projects-grid">I made this project to be used for a small business opportunity with instruction from a client.
-              Some features include a functional back button, view of all clients, client bills, and utility bills, recognition of
-              unpaid clients (based on weekly or monthly bill periods), and various calculations relating to revenue.</p>
-            <button class="btn">
-              <a href="https://github.com/RodneyMcQuain/West-Virginia-RV" style="color: inherit;">
+            <h3>Melee Notes</h3>
+            <p class="projects-grid">Melee Notes is a note app for competitive Super Smash Bros. Melee players.
+            It lets users record tournaments, sets, and games taking data from these records to query statistics based
+            on user specifications for more than 5 different fields.  The app also allows for notes to be taken
+            about players, characters, analysis, and mentality alongside with reports on tournaments and money earned.</p>
+            <button class="btn btn-dark">
+              <a href="https://github.com/RodneyMcQuain/Melee-Notes" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
               </a>
             </button>
