@@ -59,7 +59,10 @@ textarea {
 }
 
 .btn:hover {
+  -webkit-filter: brightness(90%);
   filter: brightness(90%);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
   transform: scale(1.02);
 }
 
@@ -92,6 +95,8 @@ div.project-container {
 }
 
 .project-container div:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
   transform: scale(1.02);
 }
 
@@ -128,6 +133,8 @@ div.project-container {
 }
 
 #project-dropdown:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -180,4 +187,5 @@ body {
     body {
       padding-top: 0px;
     }
+  }
 }
