@@ -90,11 +90,6 @@
                 <span class="fa fa-github projects-grid"> Github</span>
               </a>
             </button>
-            <button class="btn">
-              <a href="#" class="projects-grid" style="color: inherit;">
-                <span class="glyphicon glyphicon-download-alt projects-grid"> Download</span>
-              </a>
-            </button>
           </div>
         </div>
 
@@ -180,11 +175,6 @@
             <button class="btn">
               <a href="https://github.com/RodneyMcQuain/Melee-Calculator" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
-              </a>
-            </button>
-            <button class="btn">
-              <a href="#" class="projects-grid" style="color: inherit;">
-                <span class="glyphicon glyphicon-download-alt projects-grid"> Download</span>
               </a>
             </button>
           </div>
