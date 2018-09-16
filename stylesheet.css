@@ -99,6 +99,28 @@ div.project-container {
   font-size: 16px;
 }
 
+.row {
+  border: none;
+}
+
+.hidden-project-row {
+  padding-top: 10px;
+}
+
+.hidden-project-row div {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.hidden-project-row.unhidden div {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out;
+}
+
 #project-dropdown {
   font-size: 35px;
   border: 0;
