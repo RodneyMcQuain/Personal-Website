@@ -82,11 +82,10 @@
             </div>
             <h3>West Virginia RV</h3>
             <p class="projects-grid">A small business opportunity in West Virginia arose where outsourced laborers needed
-              close by rental property to put their recreational vehicles. So, I made this program to aid in that with
-              instruction from my father (a non-programmer) about what it should contain and how it should function.
-              The main purpose of this app is to keep track of a laborer's property position, contact information, bills,
-              and payment status (based on weekly or monthly periods); as well as the general upkeep and utility bills
-              for the property as a whole.</p>
+              close by rental property to put their recreational vehicles. So, to aid in keeping track of important information
+              I made this program. The main purpose of this app is to keep track of a laborer's property position,
+              contact information, bills, and payment status (based on weekly or monthly periods); as well as the general
+              upkeep and utility bills for the property as a whole.</p>
             <button class="btn">
               <a href="https://github.com/RodneyMcQuain/West-Virginia-RV" style="color: inherit;">
                 <span class="fa fa-github projects-grid"> Github</span>
