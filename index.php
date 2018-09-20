@@ -208,7 +208,7 @@
 
     <script src="projectDropdown.js" type="text/javascript"></script>
     <div>
-      <button id="project-dropdown">
+      <button id="project-dropdown" onclick="projectDropdownOnClick()">
         <span class="fa fa-angle-double-down"/>
       </button>
     </div>
