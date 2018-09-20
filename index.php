@@ -247,19 +247,19 @@
         <p id="validation-text"></p>
         <form action="index.php#contact" method="POST">
           <div class="-border">
-            <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>">
+            <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name">
           </div>
 
           <div class="-border">
-            <input type="text" id="email" name="email" class="form-control input-lg" placeholder="E-Mail" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>">
+            <input type="text" id="email" name="email" class="form-control input-lg" placeholder="E-Mail">
           </div>
 
           <div class="-border">
-            <input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="Subject" value="<?php echo isset($_POST['subject']) ? $_POST['subject'] : '' ?>">
+            <input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="Subject">
           </div>
 
           <div class="-border">
-            <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"><?php echo isset($_POST['message']) ? $_POST['message'] : '' ?></textarea>
+            <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"></textarea>
           </div>
 
           <div class="-border">
