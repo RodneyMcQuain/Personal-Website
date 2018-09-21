@@ -7,8 +7,8 @@ function projectDropdownOnClick() {
     rows[i].classList.toggle("unhidden");
 
   if (rows[0].className == "row hidden-project-row unhidden") {
-    var elementPosition = document.getElementById("row-2").offsetTop - 50;
-    window.scrollTo(0, elementPosition);
+    let row2Position = document.getElementById("row-2").offsetTop - 50;
+    window.scrollTo(0, row2Position);
     projectDropdown.innerHTML = '<span class="fa fa-angle-double-up"/>';
   } else {
     window.location = "#projects";
