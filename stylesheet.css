@@ -182,6 +182,10 @@ div.contact-container {
   padding: 10px;
 }
 
+body.modal-open {
+    overflow: visible;
+}
+
 html {
   scroll-behavior: smooth;
 }
