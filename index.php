@@ -268,78 +268,6 @@
             </button>
           </div>
         </form>
-        <?php
-          if (isset($_POST['submit'])) {
-              $name = $_POST['name'];
-              $emailFrom = $_POST['email'];
-              $subject = $_POST['subject'];
-              $message = $_POST['message'];
-
-              if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
-                echo "
-                  <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"modal-body\");
-                    modalBody.innerHTML = \"All fields must be filled in.\";
-
-                    $(function() {
-                      $('#aModal').modal('show');
-                    });
-                  </script>
-                ";
-
-                exit();
-              }
-
-              if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
-                echo "
-                  <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"modal-body\");
-                    modalBody.innerHTML = \"Invalid email address.\";
-
-                    $(function() {
-                      $('#aModal').modal('show');
-                    });
-                  </script>
-                ";
-
-                exit();
-              }
-
-              $mailTo = "rodneymcquain95@gmail.com";
-              $headers = 'MIME-Version: 1.0' . "\r\n" .
-                         'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-                         'X-Priority: 1' . "\r\n" .
-                         'From: ' .$emailFrom. "\r\n" .
-                         'Reply-To: ' .$emailFrom. "\r\n" .
-                         'X-Mailer: PHP/' . phpversion();
-              $txt = "Received an email from " .$name. " at " .$emailFrom. " from My Website <br/><br/>" .$message;
-
-              if (mail($mailTo, $subject, $txt, $headers)) {
-                echo "
-                  <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"modal-body\");
-                    modalBody.innerHTML = \"Email sent successfully, thank you.\";
-
-                    $(function() {
-                      $('#aModal').modal('show');
-                    });
-                  </script>
-                ";
-              } else {
-                echo "
-                  <script type=\"text/javascript\">
-                    modalBody = document.getElementById(\"modal-body\");
-                    modalBody.innerHTML = \"Error sending email, try again. \" +
-                      \"You can directly send an email to me at rodneymcqain95@gmail.com.\";
-
-                    $(function() {
-                      $('#aModal').modal('show');
-                    });
-                  </script>
-                ";
-              }
-            }
-          ?>
       </div>
     </div>
 
@@ -375,4 +303,78 @@
         });
       });
     </script>
+
+    <!-- Contact Form Script -->
+    <?php
+      if (isset($_POST['submit'])) {
+          $name = $_POST['name'];
+          $emailFrom = $_POST['email'];
+          $subject = $_POST['subject'];
+          $message = $_POST['message'];
+
+          if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
+            echo "
+              <script type=\"text/javascript\">
+                modalBody = document.getElementById(\"modal-body\");
+                modalBody.innerHTML = \"All fields must be filled in.\";
+
+                $(function() {
+                  $('#aModal').modal('show');
+                });
+              </script>
+            ";
+
+            return;
+          }
+
+          if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
+            echo "
+              <script type=\"text/javascript\">
+                modalBody = document.getElementById(\"modal-body\");
+                modalBody.innerHTML = \"Invalid email address.\";
+
+                $(function() {
+                  $('#aModal').modal('show');
+                });
+              </script>
+            ";
+
+            return;
+          }
+
+          $mailTo = "rodneymcquain95@gmail.com";
+          $headers = 'MIME-Version: 1.0' . "\r\n" .
+                     'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
+                     'X-Priority: 1' . "\r\n" .
+                     'From: ' .$emailFrom. "\r\n" .
+                     'Reply-To: ' .$emailFrom. "\r\n" .
+                     'X-Mailer: PHP/' . phpversion();
+          $txt = "Received an email from " .$name. " at " .$emailFrom. " from My Website <br/><br/>" .$message;
+
+          if (mail($mailTo, $subject, $txt, $headers)) {
+            echo "
+              <script type=\"text/javascript\">
+                modalBody = document.getElementById(\"modal-body\");
+                modalBody.innerHTML = \"Email sent successfully, thank you.\";
+
+                $(function() {
+                  $('#aModal').modal('show');
+                });
+              </script>
+            ";
+          } else {
+            echo "
+              <script type=\"text/javascript\">
+                modalBody = document.getElementById(\"modal-body\");
+                modalBody.innerHTML = \"Error sending email, try again. \" +
+                  \"You can directly send an email to me at rodneymcqain95@gmail.com.\";
+
+                $(function() {
+                  $('#aModal').modal('show');
+                });
+              </script>
+            ";
+          }
+        }
+      ?>
   </body>
