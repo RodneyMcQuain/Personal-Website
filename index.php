@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="style/stylesheet.min.css">
 </head>
 
 <body dataspy="scroll" data-target=".navbar" data-offset="50">
@@ -205,7 +205,7 @@
     </div>
   </div>
 
-  <script src="projectDropdown.js" type="text/javascript"></script>
+  <script src="scripts/projectDropdown.js" type="text/javascript"></script>
   <div>
     <button id="project-dropdown" onclick="projectDropdownOnClick()">
       <span class="fa fa-angle-double-down"/>
@@ -240,7 +240,7 @@
       <h1><span id="contact"></span>Contact</h1>
     </div>
 
-    <script src="contactFormValidation.js" type="text/javascript"></script>
+    <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
 
     <div class="center-container contact-container -curved-border">
       <p id="validation-text"></p>
@@ -376,5 +376,5 @@
         }
       }
     ?>
-    
+
 </body>
