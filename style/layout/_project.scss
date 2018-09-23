@@ -1,0 +1,75 @@
+.projects-grid p, span, a {
+  font-size: 15px;
+
+  a {
+    color: inherit;
+  }
+}
+
+.project-container div {
+  padding: 10px;
+}
+
+div.project-container {
+  margin: 10px 0;
+}
+
+.project-container {
+  div:hover {
+    @include transform($minor-scale);
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.row {
+  border: none;
+}
+
+.hidden-project-row {
+  padding-top: 10px;
+}
+
+.hidden-project-row div {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.hidden-project-row.unhidden div {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out;
+}
+
+#project-dropdown {
+  font-size: 35px;
+  border: 0;
+  background-color:white;
+
+  &:hover {
+    @include transform($major-scale);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.language-tag {
+  span {
+    padding: 4px;
+    border-radius: 15%;
+    border: 1px solid $darker-white;
+    font-size: 12px;
+  }
+
+  div {
+    padding-top: 10px;
+    border: none;
+  }
+}

@@ -1,0 +1,17 @@
+div.contact-container {
+  width: 500px;
+}
+
+.contact-container div {
+  padding: 10px;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+#validation-text {
+  display: none;
+  color: red;
+  font-size: 12px;
+}

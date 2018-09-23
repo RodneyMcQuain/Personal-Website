@@ -1,0 +1,26 @@
+#nav {
+  opacity: .95;
+}
+
+.navbar {
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+    li a {
+      margin: 0;
+      font-size: 22px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+
+.active {
+  color: #111;
+  border-bottom: 3px solid $white;
+}
