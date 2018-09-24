@@ -1,0 +1,13 @@
+h3.technologies {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+div.technologies {
+  padding: 10px;
+  font-size: 20px;
+
+  &:before {
+    content: "⁍ ";
+  }
+}
