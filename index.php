@@ -36,7 +36,7 @@
 
   <div class="img-fluid" id="banner-img">
     <div style="padding: 1%;">
-      <img src="assets/images/me.jpg" class="img-fluid img-circle img-thumbnail">
+      <img src="assets/images/me.jpg" class="img-fluid img-circle" id="me-img">
       <h1 class="header" style="margin-top: 10px;">Rodney McQuain</h1>
     </div>
   </div>
