@@ -22,7 +22,7 @@ h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
 
-p, span {
+p, span, div {
   text-align: center;
   font-size: 20px;
   font-family: 'Work Sans', sans-serif;
@@ -47,6 +47,10 @@ button, div {
 
 .-curved-border {
   border-radius: 2.5%;
+}
+
+.-top-margin {
+  margin-top: 10px;
 }
 
 .center-container {
