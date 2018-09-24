@@ -26,6 +26,7 @@
           <ul class="nav navbar-nav">
             <li><a class="anchor" href="#about-me">About Me</a></li>
             <li><a class="anchor" href="#projects">Projects</a></li>
+            <li><a class="anchor" href="#technologies">Skills</a></li>
             <li><a class="anchor" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -210,6 +211,66 @@
     <button id="project-dropdown" onclick="projectDropdownOnClick()">
       <span class="fa fa-angle-double-down"/>
     </button>
+  </div>
+
+  <!-- Technologies -->
+  <div class="container">
+    <div class="page-header">
+      <h1><span id="technologies"></span>Skills</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">Progamming Languages</h3>
+        <div class="technologies">Java</div>
+        <div class="technologies">C#</div>
+        <div class="technologies">JavaScript</div>
+        <div class="technologies">PHP</div>
+      </div>
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">Other Languages</h3>
+        <div class="technologies">HTML/FXML</div>
+        <div class="technologies">CSS</div>
+        <div class="technologies">SCSS</div>
+        <div class="technologies">SQL</div>
+      </div>
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">Frameworks</h3>
+        <div class="technologies">Bootstrap</div>
+        <div class="technologies">ASP.NET</div>
+        <div class="technologies">JUnit</div>
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 20px;">
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">Database Management</h3>
+        <div class="technologies">SQLite</div>
+        <div class="technologies">MySQL</div>
+        <div class="technologies">SQL Server</div>
+        <div class="technologies">Microsoft Access</div>
+      </div>
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">IDEs</h3>
+        <div class="technologies">Eclipse</div>
+        <div class="technologies">Visual Studio</div>
+        <div class="technologies">Atom</div>
+      </div>
+
+      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="technologies">Version Control</h3>
+        <div class="technologies">Git</div>
+      </div>
+
+    </div>
   </div>
 
   <!-- Contact Modal -->
