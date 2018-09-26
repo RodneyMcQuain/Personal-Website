@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/stylesheet.min.css">
+  <script src="scripts/projectDropdown.js" type="text/javascript"></script>
+  <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
   <script>
     $(document).ready(function () {
       $("#contact-form").submit(function(event) {
@@ -260,7 +262,6 @@
     </div>
   </div>
 
-  <script src="scripts/projectDropdown.js" type="text/javascript"></script>
   <div>
     <button id="project-dropdown" onclick="projectDropdownOnClick()">
       <span class="fa fa-angle-double-down"/>
@@ -354,8 +355,6 @@
     <div class="page-header">
       <h1><span id="contact"></span>Contact</h1>
     </div>
-
-    <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
 
     <div class="center-container contact-container -curved-border">
       <p id="validation-text"></p>
