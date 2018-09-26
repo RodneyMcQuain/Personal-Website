@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function(event) {
   var name = document.getElementById("name");
   var email = document.getElementById("email");
   var subject = document.getElementById("subject");
@@ -106,4 +106,4 @@ window.onload = function () {
       return isError;
     }
   }
-}
+});
