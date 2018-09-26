@@ -263,7 +263,7 @@
   </div>
 
   <div>
-    <button id="project-dropdown" onclick="projectDropdownOnClick()">
+    <button id="project-dropdown">
       <span class="fa fa-angle-double-down"/>
     </button>
   </div>
