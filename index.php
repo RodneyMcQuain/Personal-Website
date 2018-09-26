@@ -2,11 +2,65 @@
 <head>
   <title>Rodney McQuain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/stylesheet.min.css">
+  <script>
+    $(document).ready(function () {
+      $("#contact-form").submit(function(event) {
+        event.preventDefault();
+
+        let url = "scripts/contactForm.php";
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+        let submit = document.getElementById("submit").value;
+        let dataToSend = {
+          "name" : name,
+          "email" : email,
+          "subject" : subject,
+          "message" : message,
+          "submit" : submit
+        }
+
+        let modalTitle = document.getElementById("modal-title");
+        let modalBody = document.getElementById("modal-body");
+        modalTitle.innerHTML = "Contact Form";
+
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          url: url,
+          data: dataToSend,
+          success: function(responseText) {
+            if (responseText == "emailSent")
+              modalBody.innerHTML = "Email sent successfully, thank you.";
+            else if (responseText == "invalidEmail")
+              modalBody.innerHTML = "Please enter a valid email.";
+            else if (responseText == "empty")
+              modalBody.innerHTML = "Please do not leave any empty fields.";
+            else
+              modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
+                                + " directly send an email to me at rodneymcquain95@gmail.com.";
+
+            $("#aModal").modal("show");
+          },
+          error: function() {
+            modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
+                                + " directly send an email to me at rodneymcquain95@gmail.com.";
+
+            $("#aModal").modal("show");
+          }
+        });
+
+        return false;
+      });
+    });
+  </script>
 </head>
 
 <body dataspy="scroll" data-target=".navbar" data-offset="50">
@@ -279,7 +333,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title" id="modal-title">Contact Form</h2>
+          <h2 class="modal-title" id="modal-title"></h2>
         </div>
 
         <div class="modal-body">
@@ -305,7 +359,7 @@
 
     <div class="center-container contact-container -curved-border">
       <p id="validation-text"></p>
-      <form action="index.php#contact" method="POST">
+      <form name="contact-form" id="contact-form" action="scripts/contactForm.php" method="POST">
         <div class="-border">
           <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name">
         </div>
@@ -323,7 +377,7 @@
         </div>
 
         <div class="-border">
-          <button type="submit" name="submit" id="button" class="btn btn-lg" value="Submit">
+          <button type="submit" name="submit" id="submit" class="btn btn-lg">
             <span class="fa fa-envelope"></span> Send
           </button>
         </div>
@@ -363,79 +417,5 @@
       });
     });
   </script>
-
-  <!-- Contact Form Script -->
-  <?php
-    if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $emailFrom = $_POST['email'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        if (empty($name) || empty($emailFrom) || empty($subject) || empty($message)) {
-          echo "
-            <script type=\"text/javascript\">
-              modalBody = document.getElementById(\"modal-body\");
-              modalBody.innerHTML = \"All fields must be filled in.\";
-
-              $(function() {
-                $('#aModal').modal('show');
-              });
-            </script>
-          ";
-
-          return;
-        }
-
-        if (!empty($emailFrom) && !filter_var($emailFrom, FILTER_VALIDATE_EMAIL)) {
-          echo "
-            <script type=\"text/javascript\">
-              modalBody = document.getElementById(\"modal-body\");
-              modalBody.innerHTML = \"Invalid email address.\";
-
-              $(function() {
-                $('#aModal').modal('show');
-              });
-            </script>
-          ";
-
-          return;
-        }
-
-        $mailTo = "rodneymcquain95@gmail.com";
-        $headers = 'MIME-Version: 1.0' . "\r\n" .
-                   'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-                   'X-Priority: 1' . "\r\n" .
-                   'From: ' .$emailFrom. "\r\n" .
-                   'Reply-To: ' .$emailFrom. "\r\n" .
-                   'X-Mailer: PHP/' . phpversion();
-        $txt = "Received an email from " .$name. " at " .$emailFrom. " from My Website <br/><br/>" .$message;
-
-        if (mail($mailTo, $subject, $txt, $headers)) {
-          echo "
-            <script type=\"text/javascript\">
-              modalBody = document.getElementById(\"modal-body\");
-              modalBody.innerHTML = \"Email sent successfully, thank you.\";
-
-              $(function() {
-                $('#aModal').modal('show');
-              });
-            </script>
-          ";
-        } else {
-          echo "
-            <script type=\"text/javascript\">
-              modalBody = document.getElementById(\"modal-body\");
-              modalBody.innerHTML = \"Error sending email, try again. \" +
-                \"You can directly send an email to me at rodneymcqain95@gmail.com.\";
-
-              $(function() {
-                $('#aModal').modal('show');
-              });
-            </script>
-          ";
-        }
-      }
-    ?>
 
 </body>
