@@ -278,6 +278,7 @@
   <div class="container">
     <div class="row">
 
+      <!-- Programming Languages -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">Progamming Languages</h3>
         <div class="technologies">Java</div>
@@ -286,6 +287,7 @@
         <div class="technologies">PHP</div>
       </div>
 
+      <!-- Other Languages -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">Other Languages</h3>
         <div class="technologies">HTML/FXML</div>
@@ -294,6 +296,7 @@
         <div class="technologies">SQL</div>
       </div>
 
+      <!-- Frameworks -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">Frameworks</h3>
         <div class="technologies">Bootstrap</div>
@@ -303,8 +306,9 @@
 
     </div>
 
-    <div class="row" style="margin-top: 20px;">
+    <div id="technology-row-2" class="row" style="margin-top: 20px;">
 
+      <!-- Database Management -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">Database Management</h3>
         <div class="technologies">SQLite</div>
@@ -313,6 +317,7 @@
         <div class="technologies">Microsoft Access</div>
       </div>
 
+      <!-- IDEs -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">IDEs</h3>
         <div class="technologies">Eclipse</div>
@@ -320,6 +325,7 @@
         <div class="technologies">Atom</div>
       </div>
 
+      <!-- Version Control -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
         <h3 class="technologies">Version Control</h3>
         <div class="technologies">Git</div>
