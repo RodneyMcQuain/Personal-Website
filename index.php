@@ -2,68 +2,11 @@
 <head>
   <title>Rodney McQuain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/stylesheet.min.css">
-  <script src="scripts/projectDropdown.js" type="text/javascript"></script>
-  <script src="scripts/technologyDropdown.js" type="text/javascript"></script>
-  <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
-  <script>
-    $(document).ready(function () {
-      $("#contact-form").submit(function(event) {
-        event.preventDefault();
-
-        let url = "scripts/contactForm.php";
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let subject = document.getElementById("subject").value;
-        let message = document.getElementById("message").value;
-        let submit = document.getElementById("submit").value;
-        let dataToSend = {
-          "name" : name,
-          "email" : email,
-          "subject" : subject,
-          "message" : message,
-          "submit" : submit
-        }
-
-        let modalTitle = document.getElementById("modal-title");
-        let modalBody = document.getElementById("modal-body");
-        modalTitle.innerHTML = "Contact Form";
-
-        $.ajax({
-          type: "POST",
-          dataType: "text",
-          url: url,
-          data: dataToSend,
-          success: function(responseText) {
-            if (responseText == "emailSent")
-              modalBody.innerHTML = "Email sent successfully, thank you.";
-            else if (responseText == "invalidEmail")
-              modalBody.innerHTML = "Please enter a valid email.";
-            else if (responseText == "empty")
-              modalBody.innerHTML = "Please do not leave any empty fields.";
-            else
-              modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
-                                + " directly send an email to me at rodneymcquain95@gmail.com.";
-
-            $("#aModal").modal("show");
-          },
-          error: function() {
-            modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
-                                + " directly send an email to me at rodneymcquain95@gmail.com.";
-
-            $("#aModal").modal("show");
-          }
-        });
-
-        return false;
-      });
-    });
-  </script>
 </head>
 
 <body dataspy="scroll" data-target=".navbar" data-offset="50">
@@ -423,11 +366,68 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script type="text/javascript">
     $(document).ready(function () {
       $('body').scrollspy({
         target: '#my-nav',
         offset: 75
+      });
+    });
+  </script>
+  <script src="scripts/projectDropdown.js" type="text/javascript"></script>
+  <script src="scripts/technologyDropdown.js" type="text/javascript"></script>
+  <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $("#contact-form").submit(function(event) {
+        event.preventDefault();
+
+        let url = "scripts/contactForm.php";
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+        let submit = document.getElementById("submit").value;
+        let dataToSend = {
+          "name" : name,
+          "email" : email,
+          "subject" : subject,
+          "message" : message,
+          "submit" : submit
+        }
+
+        let modalTitle = document.getElementById("modal-title");
+        let modalBody = document.getElementById("modal-body");
+        modalTitle.innerHTML = "Contact Form";
+
+        $.ajax({
+          type: "POST",
+          dataType: "text",
+          url: url,
+          data: dataToSend,
+          success: function(responseText) {
+            if (responseText == "emailSent")
+              modalBody.innerHTML = "Email sent successfully, thank you.";
+            else if (responseText == "invalidEmail")
+              modalBody.innerHTML = "Please enter a valid email.";
+            else if (responseText == "empty")
+              modalBody.innerHTML = "Please do not leave any empty fields.";
+            else
+              modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
+                                + " directly send an email to me at rodneymcquain95@gmail.com.";
+
+            $("#aModal").modal("show");
+          },
+          error: function() {
+            modalBody.innerHTML = "Error sending email, try again. If the error persists you can"
+                                + " directly send an email to me at rodneymcquain95@gmail.com.";
+
+            $("#aModal").modal("show");
+          }
+        });
+
+        return false;
       });
     });
   </script>
