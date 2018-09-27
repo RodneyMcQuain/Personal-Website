@@ -356,31 +356,33 @@
       <h1><span id="contact"></span>Contact</h1>
     </div>
 
-    <div class="center-container contact-container -curved-border">
-      <p id="validation-text"></p>
-      <form name="contact-form" id="contact-form" action="scripts/contactForm.php" method="POST">
-        <div class="-border">
-          <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name">
-        </div>
+    <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="center-container contact-container -curved-border">
+        <p id="validation-text"></p>
+        <form name="contact-form" id="contact-form" action="scripts/contactForm.php" method="POST">
+          <div class="-border">
+            <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name">
+          </div>
 
-        <div class="-border">
-          <input type="text" id="email" name="email" class="form-control input-lg" placeholder="E-Mail">
-        </div>
+          <div class="-border">
+            <input type="text" id="email" name="email" class="form-control input-lg" placeholder="E-Mail">
+          </div>
 
-        <div class="-border">
-          <input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="Subject">
-        </div>
+          <div class="-border">
+            <input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="Subject">
+          </div>
 
-        <div class="-border">
-          <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"></textarea>
-        </div>
+          <div class="-border">
+            <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"></textarea>
+          </div>
 
-        <div class="-border">
-          <button type="submit" name="submit" id="submit" class="btn btn-lg">
-            <span class="fa fa-envelope"></span> Send
-          </button>
-        </div>
-      </form>
+          <div class="-border">
+            <button type="submit" name="submit" id="submit" class="btn btn-lg">
+              <span class="fa fa-envelope"></span> Send
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
