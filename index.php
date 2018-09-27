@@ -407,9 +407,10 @@
           url: url,
           data: dataToSend,
           success: function(responseText) {
-            if (responseText == "emailSent")
+            if (responseText == "emailSent") {
               modalBody.innerHTML = "Email sent successfully, thank you.";
-            else if (responseText == "invalidEmail")
+              document.getElementById("contact-form").reset();
+            } else if (responseText == "invalidEmail")
               modalBody.innerHTML = "Please enter a valid email.";
             else if (responseText == "empty")
               modalBody.innerHTML = "Please do not leave any empty fields.";
