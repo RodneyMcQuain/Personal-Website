@@ -46,20 +46,6 @@ div.project-container {
   transition: opacity 1s ease-in-out;
 }
 
-#project-dropdown {
-  font-size: 35px;
-  border: 0;
-  background-color:white;
-
-  &:hover {
-    @include transform($major-scale);
-  }
-
-  &:focus {
-    outline: 0;
-  }
-}
-
 .language-tag {
   span {
     padding: 4px;
