@@ -58,6 +58,20 @@ button, div {
   padding: 10px;
 }
 
+.btn-dropdown {
+  font-size: 35px;
+  border: 0;
+  background-color:white;
+
+  &:hover {
+    @include transform($major-scale);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
