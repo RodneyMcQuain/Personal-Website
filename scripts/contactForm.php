@@ -31,7 +31,5 @@
       echo "emailNotSent";
       exit;
     }
-  } else {
-    echo "nope";
   }
 ?>
