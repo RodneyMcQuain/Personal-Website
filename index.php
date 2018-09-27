@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/stylesheet.min.css">
   <script src="scripts/projectDropdown.js" type="text/javascript"></script>
+  <script src="scripts/technologyDropdown.js" type="text/javascript"></script>
   <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
   <script>
     $(document).ready(function () {
@@ -263,7 +264,7 @@
   </div>
 
   <div>
-    <button id="project-dropdown">
+    <button id="project-dropdown" class="btn-dropdown">
       <span class="fa fa-angle-double-down"/>
     </button>
   </div>
@@ -306,7 +307,7 @@
 
     </div>
 
-    <div id="technology-row-2" class="row" style="margin-top: 20px;">
+    <div id="technology-row-2" class="row hidden-project-row" style="margin-top: 20px;">
 
       <!-- Database Management -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
@@ -332,6 +333,12 @@
       </div>
 
     </div>
+  </div>
+
+  <div>
+    <button id="technology-dropdown" class="btn-dropdown">
+      <span class="fa fa-angle-double-down"/>
+    </button>
   </div>
 
   <!-- Contact Modal -->
