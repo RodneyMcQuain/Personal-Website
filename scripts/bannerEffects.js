@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setTimeout(function() {
     bannerHeader.classList.add("banner-appear");
-  }, 750);
+  }, 250);
 
   setTimeout(function() {
     bannerText.classList.add("banner-appear");
     bannerBtn.classList.add("banner-appear");
-  }, 2000);
+  }, 1500);
 });
