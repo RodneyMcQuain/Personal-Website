@@ -3,3 +3,6 @@ $darker-white: #D3D3D3; //Slightly darker than $white used for borders where app
 
 $minor-scale: scale(1.02); //minor transform scale
 $major-scale: scale(1.2); //major transform scale
+
+$hide-transition: all .5s ease-in-out; //transition for hiding
+$unhide-transition: opacity 1s ease-in-out; //transition for appearing
