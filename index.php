@@ -256,7 +256,7 @@
 
     </div>
 
-    <div id="technology-row-2" class="row hidden-project-row" style="margin-top: 20px;">
+    <div id="technology-row-2" class="row hidden-technology-row">
 
       <!-- Database Management -->
       <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
