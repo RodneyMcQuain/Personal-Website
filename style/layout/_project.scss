@@ -29,17 +29,11 @@ div.project-container {
 }
 
 .hidden-project-row div {
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .5s ease-in-out;
+  @include hide();
 }
 
 .hidden-project-row.unhidden div {
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 1s ease-in-out;
+  @include unhide();
 }
 
 .language-tag {
