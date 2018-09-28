@@ -11,3 +11,15 @@ div.technologies {
     content: "⁍ ";
   }
 }
+
+.hidden-technology-row {
+  margin-top: 20px;
+}
+
+.hidden-technology-row div {
+  @include hide();
+}
+
+.hidden-technology-row.unhidden div {
+  @include unhide();
+}
