@@ -1,11 +1,52 @@
 #banner-img {
-  background-image: url(../assets/images/code.jpg);
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/images/code.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
 }
 
-#me-img {
-  padding: 3px;
-  background: $white;
-  border: 2px solid $darker-white;
+#banner-container {
+  margin-top: -20%;
+  padding: 20px;
+  max-width: 900px;
+}
+
+#banner-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: $white;
+  text-shadow: 2px 2px black;
+}
+
+#banner-text {
+  margin: 20px 0 50px 0;
+  font-size: 1.2em;
+  color: $white;
+}
+
+#banner-btn {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: $white;
+  border: $white, 1px, solid;
+  padding: 10px;
+  background: none;
+
+  &:hover {
+    background: $white;
+    color: black;
+    transform: $minor-scale;
+  }
 }
