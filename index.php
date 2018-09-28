@@ -36,12 +36,12 @@
 
   <div class="img-fluid" id="banner-img">
     <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12" id="banner-container">
-      <h1 id="banner-header">Rodney McQuain</h1>
-      <p id="banner-text">
+      <h1 id="banner-header" class="banner-hide">Rodney McQuain</h1>
+      <p id="banner-text" class="banner-hide">
         Hello, I am a computer science major looking for an opportunity
         to test my skills and grow as a developer.
       </p>
-      <a id="banner-btn" class="-curved-border" href="#about-me">Learn About Me</a>
+      <a id="banner-btn" class="-curved-border banner-hide" href="#about-me">Learn About Me</a>
     </div>
   </div>
 
@@ -379,6 +379,7 @@
       });
     });
   </script>
+  <script src="scripts/bannerEffects.js" type="text/javascript"></script>
   <script src="scripts/projectDropdown.js" type="text/javascript"></script>
   <script src="scripts/technologyDropdown.js" type="text/javascript"></script>
   <script src="scripts/contactFormValidation.js" type="text/javascript"></script>
