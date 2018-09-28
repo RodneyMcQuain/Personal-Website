@@ -48,5 +48,15 @@
     background: $white;
     color: black;
     transform: $minor-scale;
+    transition: all .5s ease-in-out;
   }
+}
+
+.banner-hide {
+  opacity: 0;
+}
+
+.banner-appear {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
 }
