@@ -74,13 +74,3 @@ button, div {
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  position: relative;
-  padding-top: 50px;
-  @media (max-width: 979px) {
-    body {
-      padding-top: 0px;
-    }
-  }
-}
