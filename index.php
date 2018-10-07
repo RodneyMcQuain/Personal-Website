@@ -366,7 +366,7 @@
           </div>
 
           <div class="-border">
-            <textarea id="message" name="message" class="form-control input-lg" style="height: 200px;" placeholder="Message"></textarea>
+            <textarea id="message" name="message" class="form-control input-lg" placeholder="Message"></textarea>
           </div>
 
           <div class="-border">
