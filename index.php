@@ -25,6 +25,7 @@
         <div class="collapse navbar-collapse" id="my-nav">
           <ul class="nav navbar-nav">
             <li><a class="anchor" href="#about-me">About Me</a></li>
+            <li><a class="anchor" href="#education">Education</a></li>
             <li><a class="anchor" href="#projects">Projects</a></li>
             <li><a class="anchor" href="#technologies">Skills</a></li>
             <li><a class="anchor" href="#contact">Contact</a></li>
@@ -63,6 +64,38 @@
       Super Smash Bros. Melee.  Further, it is something I am very passionate about and is a testament
       to my dedication of being the best that I can be at whatever I put my mind to.
     </p>
+  </div>
+
+  <!-- Education -->
+  <div class="container">
+    <div class="page-header">
+      <h1><span id="education"></span>Education</h1>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
+        <div class="-curved-border">
+          <img src="assets/images/pufw.jpg" class="img-fluid img-thumbnail rounded projects-grid">
+          <h3 class="education-institution">Purdue University Fort Wayne</h3>
+          <p>Fort Wayne, Indiana</p>
+          <p>BS in Computer Science</p>
+          <p>Expected Graduation Date: 12/2020</p>
+          <p>GPA: 4.0/4.0</p>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
+        <div class="-curved-border">
+          <img src="assets/images/ivyTech.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <h3 class="education-institution">Ivy Tech Community College</h3>
+          <p>Fort Wayne, Indiana</p>
+          <p>AS in Software Development</p>
+          <p>Graduation Date: 12/2017</p>
+          <p>GPA: 3.9/4.0</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Projects -->
