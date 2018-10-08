@@ -8,3 +8,10 @@
   padding: 3px;
   margin-left: 10px;
 }
+
+@media (max-width: 325px) {
+  #me-img {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
