@@ -11,6 +11,11 @@
 
 <body dataspy="scroll" data-target=".navbar" data-offset="50">
 
+  <!-- Preloader -->
+  <div id="preloader-overlay">
+    <div id="preloader-spinner"></div>
+  </div>
+
   <nav class="navbar navbar-fixed-top navbar-inverse" id="nav">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -404,6 +409,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="scripts/preloader.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $('body').scrollspy({
