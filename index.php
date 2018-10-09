@@ -385,21 +385,21 @@
   </div>
 
   <!-- Footer -->
-  <footer style="margin-top: 2%; width: 100%; background-color: #222; padding: 10px; overflow: hidden;">
+  <footer>
     <div class="row">
       <div class="col-md-6">
-        <p style="color: #f2f2f2">&copy 2018 Copyright: Rodney McQuain</p>
+        <p>&copy 2018 Copyright: Rodney McQuain</p>
       </div>
 
       <div class="col-md-6">
         <ul class="list-unstyled list-inline">
           <button class="btn btn-dark">
-            <a href="https://github.com/RodneyMcQuain/" style="color: inherit;">
+            <a href="https://github.com/RodneyMcQuain/">
               <span class="fa fa-github"> My Github</span>
             </a>
           </button>
           <button class="btn btn-dark">
-            <a href="https://www.linkedin.com/in/rodneymcquain/" style="color: inherit;">
+            <a href="https://www.linkedin.com/in/rodneymcquain/">
               <span class="fa fa-linkedin"> My LinkedIn</span>
             </a>
           </button>
