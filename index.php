@@ -92,7 +92,7 @@
 
       <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
         <div class="-curved-border">
-          <img src="assets/images/ivyTech.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/ivyTech.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <h3 class="education-institution">Ivy Tech Community College</h3>
           <p>Fort Wayne, Indiana</p>
           <p>AS in Software Development</p>
@@ -116,7 +116,7 @@
       <!-- West Virginia RV -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/westVirginiaRV.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/westVirginiaRV.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">Java</span>
             <span class="language-tag">FXML</span>
@@ -139,7 +139,7 @@
       <!-- Twitch Platform Fighters -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/twitchPlatformFighters.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/twitchPlatformFighters.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">JavaScript</span>
           </div>
@@ -157,7 +157,7 @@
       <!-- Melee Notes -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/meleeNotes.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/meleeNotes.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">Java</span>
             <span class="language-tag">JUnit</span>
@@ -183,7 +183,7 @@
       <!-- CRUD Music -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/musicProgram.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/musicProgram.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">C#</span>
             <span class="language-tag">JavaScript</span>
@@ -207,7 +207,7 @@
       <!-- Melee Calculator -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/meleeCalc.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/meleeCalc.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">Java</span>
           </div>
@@ -227,7 +227,7 @@
       <!-- PHP Login -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/phpLogin.png" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/phpLogin.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">PHP</span>
             <span class="language-tag">JavaScript</span>
