@@ -136,18 +136,19 @@
         </div>
       </div>
 
-      <!-- Twitch Platform Fighters -->
+      <!-- Fast Twitch Games -->
       <div class="col-xl-4 col-md-4 col-sm-12 col-xs-12 project-container">
         <div class="-curved-border">
-          <img src="assets/images/twitchPlatformFighters.jpg" class="img-fluid img-thumbnail rounded projects-grid">
+          <img src="assets/images/fastTwitchGames.jpg" class="img-fluid img-thumbnail rounded projects-grid">
           <div class="language-tag">
             <span class="language-tag">JavaScript</span>
           </div>
-          <h3>Twitch Platform Fighters</h3>
-          <p class="projects-grid">A chrome extension using twitch API that quickly links to streams for platform fighting games,
-             giving a list of people streaming each game. The extension displays the twitch user, stream title, view count, and stream thumbnail.</p>
+          <h3>Fast Twitch Games</h3>
+          <p class="projects-grid">A chrome extension using Twitch API that quickly links to people streaming your favorite video games.
+            The extension stores your games in local storage for easy access and displays the twitch user, stream title, view count, and stream thumbnail
+            for each stream of a specified game.</p>
           <button class="btn">
-            <a href="https://github.com/RodneyMcQuain/Platform-Fighters-Twitch-Chrome-Extension" style="color: inherit;">
+            <a href="https://github.com/RodneyMcQuain/Fast-Twitch-Games" style="color: inherit;">
               <span class="fa fa-github projects-grid"> Github</span>
             </a>
           </button>
