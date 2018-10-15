@@ -43,6 +43,10 @@ button, div {
 
 a {
   color: $black;
+
+  &:hover {
+    color: $black;
+  }
 }
 
 .-border, .-curved-border {
