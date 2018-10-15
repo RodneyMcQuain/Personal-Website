@@ -41,6 +41,10 @@ button, div {
   text-align: center;
 }
 
+a {
+  color: $black;
+}
+
 .-border, .-curved-border {
   border: 1px solid $white;
 }
