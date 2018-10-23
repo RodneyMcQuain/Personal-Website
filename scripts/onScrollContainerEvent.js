@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   window.addEventListener("scroll", function(event) {
       Array.from(containers).forEach(function(container) {
-          if (isElementInViewportTop(container) || isElementInViewportBottom(container)) {
+          if (isElementInViewport(container)) {
             container.classList.add("in-view-appear");
           } else {
             container.classList.remove("in-view-appear");
@@ -12,21 +12,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 });
 
-function isElementInViewportBottom (element) {
+function isElementInViewport (element) {
   let rect = element.getBoundingClientRect();
 
   return (
-    rect.bottom >= 0 &&
-    rect.top < window.innerHeight
-  );
-}
-
-function isElementInViewportTop (element) {
-  let rect = element.getBoundingClientRect();
-  console.log(rect.top + " " + window.innerHeight);
-
-  return (
-    rect.top >= 0 &&
-    rect.top < window.innerHeight
+    (rect.top >= 0 && rect.top < window.innerHeight) ||
+    (rect.bottom >= 0 && rect.bottom < window.innerHeight)
   );
 }
