@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
       });
   });
+
+  /* Manually fired for when someone refreshes the page
+  so the scroll event does not need to be triggered to
+  show the content. */
+  fireScrollEvent();
 });
 
 function isElementInViewport (element) {
@@ -19,4 +24,8 @@ function isElementInViewport (element) {
     (rect.top > element.offsetHeight * -1) &&
     (rect.top < window.innerHeight)
   );
+}
+
+function fireScrollEvent() {
+  window.dispatchEvent(new Event("scroll"));
 }
