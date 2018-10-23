@@ -90,8 +90,7 @@ a {
 
 .in-view-appear {
   opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-  transition: width .75s ease-in-out;
+  transition: width .75s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 html {
