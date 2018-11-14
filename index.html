@@ -75,30 +75,32 @@
   </div>
 
   <!-- Education -->
-  <div class="container in-view-hide">
-    <div class="page-header">
-      <h1><span id="education"></span>Education</h1>
-    </div>
-
-    <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
-      <div class="-curved-border">
-        <img src="assets/images/pufw.jpg" class="img-fluid img-thumbnail rounded projects-grid">
-        <h3 class="education-institution">Purdue University Fort Wayne</h3>
-        <p>Fort Wayne, Indiana</p>
-        <p>BS in Computer Science</p>
-        <p>Expected Graduation Date: 12/2020</p>
-        <p>GPA: 4.0/4.0</p>
+  <div class="dark-section">
+    <div class="container in-view-hide">
+      <div class="page-header">
+        <h1><span id="education"></span>Education</h1>
       </div>
-    </div>
 
-    <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
-      <div class="-curved-border">
-        <img src="assets/images/ivyTech.jpg" class="img-fluid img-thumbnail rounded projects-grid">
-        <h3 class="education-institution">Ivy Tech Community College</h3>
-        <p>Fort Wayne, Indiana</p>
-        <p>AS in Software Development</p>
-        <p>Graduation Date: 12/2017</p>
-        <p>GPA: 3.9/4.0</p>
+      <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
+        <div class="-curved-border">
+          <img src="assets/images/pufw.jpg" class="img-fluid img-thumbnail rounded projects-grid">
+          <h3 class="education-institution">Purdue University Fort Wayne</h3>
+          <p>Fort Wayne, Indiana</p>
+          <p>BS in Computer Science</p>
+          <p>Expected Graduation Date: 12/2020</p>
+          <p>GPA: 4.0/4.0</p>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 education-container">
+        <div class="-curved-border">
+          <img src="assets/images/ivyTech.jpg" class="img-fluid img-thumbnail rounded">
+          <h3 class="education-institution">Ivy Tech Community College</h3>
+          <p>Fort Wayne, Indiana</p>
+          <p>AS in Software Development</p>
+          <p>Graduation Date: 12/2017</p>
+          <p>GPA: 3.9/4.0</p>
+        </div>
       </div>
     </div>
   </div>
@@ -257,79 +259,81 @@
   </div>
 
   <!-- Technologies -->
-  <div class="container in-view-hide">
-    <div class="page-header">
-      <h1><span id="skills"></span>Skills</h1>
+  <div class="dark-section">
+    <div class="container in-view-hide">
+      <div class="page-header">
+        <h1><span id="skills"></span>Skills</h1>
+      </div>
+
+      <div class="row">
+
+        <!-- Programming Languages -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">Progamming Languages</h3>
+          <div class="technologies">Java</div>
+          <div class="technologies">C#</div>
+          <div class="technologies">JavaScript</div>
+          <div class="technologies">PHP</div>
+        </div>
+
+        <!-- Other Languages -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">Other Languages</h3>
+          <div class="technologies">HTML</div>
+          <div class="technologies">FXML</div>
+          <div class="technologies">CSS</div>
+          <div class="technologies">SCSS</div>
+          <div class="technologies">SQL</div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">Frameworks</h3>
+          <div class="technologies">JavaFX</div>
+          <div class="technologies">Bootstrap</div>
+          <div class="technologies">ASP.NET Web Forms</div>
+          <div class="technologies">Swing</div>
+          <div class="technologies">ReactJS</div>
+          <div class="technologies">JUnit</div>
+        </div>
+
+      </div>
+
+      <div id="technology-row-2" class="row hidden-technology-row">
+
+        <!-- Database Management -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">Database Management</h3>
+          <div class="technologies">SQLite</div>
+          <div class="technologies">MySQL</div>
+          <div class="technologies">SQL Server</div>
+          <div class="technologies">Microsoft Access</div>
+        </div>
+
+        <!-- IDEs -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">IDEs</h3>
+          <div class="technologies">Eclipse</div>
+          <div class="technologies">Visual Studio</div>
+          <div class="technologies">Atom</div>
+        </div>
+
+        <!-- Version Control -->
+        <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
+          <h3 class="technologies">Version Control</h3>
+          <div class="technologies">Git</div>
+        </div>
+
+      </div>
+
+      <!-- Technology Dropdown -->
+      <div>
+        <button id="technology-dropdown" class="btn-dropdown">
+          <span class="fa fa-angle-double-down"/>
+        </button>
+      </div>
+
     </div>
-
-    <div class="row">
-
-      <!-- Programming Languages -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">Progamming Languages</h3>
-        <div class="technologies">Java</div>
-        <div class="technologies">C#</div>
-        <div class="technologies">JavaScript</div>
-        <div class="technologies">PHP</div>
-      </div>
-
-      <!-- Other Languages -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">Other Languages</h3>
-        <div class="technologies">HTML</div>
-        <div class="technologies">FXML</div>
-        <div class="technologies">CSS</div>
-        <div class="technologies">SCSS</div>
-        <div class="technologies">SQL</div>
-      </div>
-
-      <!-- Frameworks -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">Frameworks</h3>
-        <div class="technologies">JavaFX</div>
-        <div class="technologies">Bootstrap</div>
-        <div class="technologies">ASP.NET Web Forms</div>
-        <div class="technologies">Swing</div>
-        <div class="technologies">ReactJS</div>
-        <div class="technologies">JUnit</div>
-      </div>
-
-    </div>
-
-    <div id="technology-row-2" class="row hidden-technology-row">
-
-      <!-- Database Management -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">Database Management</h3>
-        <div class="technologies">SQLite</div>
-        <div class="technologies">MySQL</div>
-        <div class="technologies">SQL Server</div>
-        <div class="technologies">Microsoft Access</div>
-      </div>
-
-      <!-- IDEs -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">IDEs</h3>
-        <div class="technologies">Eclipse</div>
-        <div class="technologies">Visual Studio</div>
-        <div class="technologies">Atom</div>
-      </div>
-
-      <!-- Version Control -->
-      <div class="-top-margin col-xl-4 col-md-4 col-sm-4 col-xs-12">
-        <h3 class="technologies">Version Control</h3>
-        <div class="technologies">Git</div>
-      </div>
-
-    </div>
-
-    <!-- Technology Dropdown -->
-    <div>
-      <button id="technology-dropdown" class="btn-dropdown">
-        <span class="fa fa-angle-double-down"/>
-      </button>
-    </div>
-
   </div>
 
   <!-- Contact Modal -->
