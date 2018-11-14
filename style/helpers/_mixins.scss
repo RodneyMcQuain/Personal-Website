@@ -4,6 +4,11 @@
   transform: $property;
 }
 
+@mixin animation($property) {
+  -webkit-animation: $property;
+  animation: $property;
+}
+
 @mixin filter($property) {
   -webkit-filter: $property;
   filter: $property;
