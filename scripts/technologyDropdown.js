@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       window.scrollTo(0, row2Position);
       technologyDropdown.innerHTML = '<span class="fa fa-angle-double-up"/>';
     } else {
-      window.location = "#technologies";
+      window.location = "#skills";
       technologyDropdown.innerHTML = '<span class="fa fa-angle-double-down"/>';
     }
   });
