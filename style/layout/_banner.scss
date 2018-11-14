@@ -64,7 +64,7 @@
   &:hover {
     background: $white;
     color: black;
-    transform: $minor-scale;
+    @include transform($minor-scale);
     transition: all .5s ease-in-out;
   }
 }
