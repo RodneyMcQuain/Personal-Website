@@ -75,14 +75,28 @@ a {
   font-size: 35px;
   border: 0;
   background-color: transparent;
+  @include animation(pulse 2s infinite);
 
   &:hover {
+    @include animation(none);
     @include transform($major-scale);
   }
 
   &:focus {
     outline: 0;
   }
+}
+
+@-webkit-keyframes pulse {
+  0% { @include transform(scale(1)); }
+  50% { @include transform($major-scale); }
+  100% { @include transform(scale(1)); }
+}
+
+@keyframes pulse {
+  0% { @include transform(scale(1)); }
+  50% { @include transform($major-scale); }
+  100% { @include transform(scale(1)); }
 }
 
 .in-view-hide {
