@@ -94,6 +94,18 @@ a {
   transition: width .75s ease-in-out, opacity 1.5s ease-in-out;
 }
 
+.dark-section {
+  background-image: $dark-gradient;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  color: $white;
+
+  .-curved-border {
+    border: 1px solid #444;
+    box-shadow: 4px 4px 10px #111;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
