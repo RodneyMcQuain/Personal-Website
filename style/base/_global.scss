@@ -75,7 +75,7 @@ a {
   font-size: 35px;
   border: 0;
   background-color: transparent;
-  @include animation(pulse 2s infinite);
+  @include animation(major-pulse 2s infinite);
 
   &:hover {
     @include animation(none);
@@ -87,15 +87,27 @@ a {
   }
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes major-pulse {
   0% { @include transform(scale(1)); }
   50% { @include transform($major-scale); }
   100% { @include transform(scale(1)); }
 }
 
-@keyframes pulse {
+@keyframes major-pulse {
   0% { @include transform(scale(1)); }
   50% { @include transform($major-scale); }
+  100% { @include transform(scale(1)); }
+}
+
+@keyframes minor-pulse {
+  0% { @include transform(scale(1)); }
+  50% { @include transform($minor-scale); }
+  100% { @include transform(scale(1)); }
+}
+
+@-webkit-keyframes minor-pulse {
+  0% { @include transform(scale(1)); }
+  50% { @include transform($minor-scale); }
   100% { @include transform(scale(1)); }
 }
 
