@@ -1,12 +1,9 @@
-.footer p {
-  color: $white;
-}
-
 footer {
-  margin-top: 2%;
+  margin-top: 10px;
   width: 100%;
-  background-color: $black;
+  background: $black !important;
   padding: 10px;
+  padding-bottom: 0 !important;
   overflow: hidden;
 
   p {
