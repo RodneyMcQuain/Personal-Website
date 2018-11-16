@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   let bannerHeader = document.getElementById("banner-header");
   let bannerText = document.getElementById("banner-text");
-  let bannerBtn = document.getElementById("banner-btn");
+  let bannerBtnContainer = document.getElementById("banner-btn-container");
 
   setTimeout(function() {
     bannerHeader.classList.add("banner-appear");
@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setTimeout(function() {
     bannerText.classList.add("banner-appear");
-    bannerBtn.classList.add("banner-appear");
+    bannerBtnContainer.classList.add("banner-appear");
   }, 1500);
 });
