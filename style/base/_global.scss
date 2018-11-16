@@ -32,9 +32,60 @@ textarea {
   resize: none;
 }
 
-.btn:hover {
-  @include filter(brightness(90%));
-  @include transform($minor-scale);
+.btn {
+  background-image: $dark-gradient;
+  color: $white;
+  box-shadow: 3px 3px 10px #ccc;
+  transition: all .5s ease-in-out;
+
+  a {
+    color: $white;
+  }
+
+  &:hover {
+    border: 1px solid $black;
+    background: $white;
+    color: $black;
+    @include transform($minor-scale);
+    transition: all .5s ease-in-out;
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+.dark-section {
+  background-image: $dark-gradient;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  color: $white;
+
+  .-curved-border {
+    border: 1px solid $lighter-black;
+    box-shadow: 4px 4px 10px $darker-black;
+  }
+
+  .btn {
+    background: $white;
+    color: $black;
+    box-shadow: 3px 3px 10px $darker-black;
+
+    a {
+      color: $black;
+    }
+
+    &:hover {
+      border: 1px solid $white;
+      background: $black;
+      color: $white;
+      transition: all .5s ease-in-out;
+
+      a {
+        color: $white;
+      }
+    }
+  }
 }
 
 button, div {
@@ -118,18 +169,6 @@ a {
 .in-view-appear {
   opacity: 1;
   transition: width .75s ease-in-out, opacity 1.5s ease-in-out;
-}
-
-.dark-section {
-  background-image: $dark-gradient;
-  padding-bottom: 30px;
-  margin-top: 20px;
-  color: $white;
-
-  .-curved-border {
-    border: 1px solid #444;
-    box-shadow: 4px 4px 10px #111;
-  }
 }
 
 html {
