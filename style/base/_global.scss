@@ -86,6 +86,10 @@ textarea {
       }
     }
   }
+
+  .container-top-image {
+    border-bottom: 2px solid $lighter-black;
+  }
 }
 
 button, div {
@@ -169,6 +173,21 @@ a {
 .in-view-appear {
   opacity: 1;
   transition: width .75s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.container-top-image {
+  max-width: 100%;
+  border-top-left-radius: 2.5%;
+  border-top-right-radius: 2.5%;
+  border-bottom: 2px solid $darker-white;
+}
+
+.padding-container {
+  padding: 10px;
+}
+
+.padding-container div {
+  padding: 10px;
 }
 
 html {
