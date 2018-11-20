@@ -6,19 +6,7 @@
   }
 }
 
-.project-container div {
-  padding: 10px;
-}
-
-div.project-container {
-  margin: 10px 0;
-}
-
 .project-container {
-  div:hover {
-    @include transform($minor-scale);
-  }
-
   p {
     font-size: 16px;
   }
