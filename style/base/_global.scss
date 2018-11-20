@@ -190,6 +190,14 @@ a {
   padding: 10px;
 }
 
+.upscale-container {
+  transition: transform .25s ease-in-out;
+
+  &:hover {
+    @include transform($minor-scale);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
