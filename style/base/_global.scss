@@ -186,7 +186,7 @@ a {
   padding: 10px;
 }
 
-.padding-container div {
+.padding-container-all div {
   padding: 10px;
 }
 
@@ -196,6 +196,10 @@ a {
   &:hover {
     @include transform($minor-scale);
   }
+}
+
+.margin-container {
+  margin: 10px 0;
 }
 
 html {
