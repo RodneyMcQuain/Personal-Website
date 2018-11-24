@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  var name = document.getElementById("name");
-  var email = document.getElementById("email");
-  var subject = document.getElementById("subject");
-  var message = document.getElementById("message");
-  var validationText = document.getElementById("validation-text")
+  let tfName = document.getElementById("name");
+  let tfEmail = document.getElementById("email");
+  let tfSubject = document.getElementById("subject");
+  let tfMessage = document.getElementById("message");
+  let btnSend = document.getElementById("submit");
+  let validationText = document.getElementById("validation-text")
 
   addKeyUpListeners();
   addFocusOutListeners();
   addFocusInListeners();
 
   function addKeyUpListeners() {
-    name.addEventListener("keyup", e => {
+    tfName.addEventListener("keyup", e => {
       keyUpEvent();
     });
 
@@ -18,20 +19,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       keyUpEvent();
     });
 
-    subject.addEventListener("keyup", e => {
+    tfSubject.addEventListener("keyup", e => {
       keyUpEvent();
     });
 
-    message.addEventListener("keyup", e => {
+    tfMessage.addEventListener("keyup", e => {
       keyUpEvent();
     });
 
     function keyUpEvent() {
-      let isEmpty = checkEmpty();
-
-      if (!isEmpty) {
+      if (!isEmpty()) {
         let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (!email.value.match(emailRegex)) {
+        if (!tfEmail.value.match(emailRegex)) {
           validationText.style.display = "block";
           validationText.innerHTML = "Please provide a valid email.";
         } else {
@@ -40,16 +39,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
 
-    function checkEmpty() {
+    function isEmpty() {
       let isEmpty = false;
 
-      if (name.value.trim() == "" || email.value.trim() == "" || subject.value.trim() == "" || message.value.trim() == "") {
+      if (tfName.value.trim() == "" || tfEmail.value.trim() == "" || tfSubject.value.trim() == "" || tfMessage.value.trim() == "") {
         validationText.style.display = "block";
         validationText.innerHTML = "Please fill in empty fields.";
         isEmpty = true;
       } else {
         validationText.style.display = "none";
         validationText.innerHTML = "";
+
       }
 
       return isEmpty;
@@ -57,44 +57,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function addFocusOutListeners() {
-    name.addEventListener("focusout", e => {
+    tfName.addEventListener("focusout", e => {
       validationText.style.display = "none";
     });
 
-    email.addEventListener("focusout", e => {
+    tfEmail.addEventListener("focusout", e => {
       validationText.style.display = "none";
     });
 
-    subject.addEventListener("focusout", e => {
+    tfSubject.addEventListener("focusout", e => {
       validationText.style.display = "none";
     });
 
-    message.addEventListener("focusout", e => {
+    tfMessage.addEventListener("focusout", e => {
       validationText.style.display = "none";
     });
   }
 
   function addFocusInListeners() {
-    name.addEventListener("focusin", e => {
+    tfName.addEventListener("focusin", e => {
       focusInEvent();
     });
 
-    email.addEventListener("focusin", e => {
+    tfEmail.addEventListener("focusin", e => {
       focusInEvent();
     });
 
-    subject.addEventListener("focusin", e => {
+    tfSubject.addEventListener("focusin", e => {
       focusInEvent();
     });
 
-    message.addEventListener("focusin", e => {
+    tfMessage.addEventListener("focusin", e => {
       focusInEvent();
     });
 
     function focusInEvent() {
-      if (isError()) {
+      if (isError())
         validationText.style.display = "block";
-      }
     }
 
     function isError() {
