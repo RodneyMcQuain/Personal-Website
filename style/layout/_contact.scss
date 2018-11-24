@@ -19,8 +19,12 @@
   }
 }
 
-.contact-container div {
-  padding: 10px;
+.contact-container {
+  padding: 20px;
+
+  .input-lg {
+    margin-bottom: 15px;
+  }
 }
 
 body.modal-open {
@@ -31,4 +35,10 @@ body.modal-open {
   display: none;
   color: red;
   font-size: 12px;
+}
+
+label {
+  font-size: 16px;
+  float: left;
+  margin-bottom: 4px;
 }
