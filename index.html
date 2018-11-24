@@ -362,25 +362,29 @@
       <div class="center-container contact-container -curved-border">
         <p id="validation-text"></p>
         <form name="contact-form" id="contact-form" action="scripts/contactForm.php" method="POST">
-          <div class="-border">
+          <div>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" class="form-control input-lg" placeholder="Full Name">
           </div>
 
-          <div class="-border">
-            <input type="text" id="email" name="email" class="form-control input-lg" placeholder="E-Mail">
+          <div>
+            <label for="eamil">Email</label>
+            <input type="text" id="email" name="email" class="form-control input-lg" placeholder="Email">
           </div>
 
-          <div class="-border">
+          <div>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" class="form-control input-lg" placeholder="Subject">
           </div>
 
-          <div class="-border">
+          <div>
+            <label for="message">Message</label>
             <textarea id="message" name="message" class="form-control input-lg" placeholder="Message"></textarea>
           </div>
 
-          <div class="-border">
-            <button type="submit" name="submit" id="submit" class="btn btn-lg">
-              <span class="fa fa-envelope"></span> Send
+          <div>
+            <button type="submit" name="submit" id="submit" class="btn btn-lg" disabled>
+              <span class="fa fa-envelope"></span> Send Email
             </button>
           </div>
         </form>
