@@ -36,7 +36,7 @@ textarea {
   background: $black;
   background-image: $dark-gradient;
   color: $white;
-  box-shadow: 3px 3px 10px #ccc;
+  box-shadow: 2px 2px 5px #ccc;
   transition: transform .5s ease-in-out;
 
   a, span {
@@ -72,7 +72,7 @@ textarea {
   .btn {
     background: $white;
     color: $black;
-    box-shadow: 3px 3px 10px $darker-black;
+    box-shadow: 2px 2px 5px $darker-black;
 
     a, span {
       color: $black;
