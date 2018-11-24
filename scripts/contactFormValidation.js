@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (!tfEmail.value.match(emailRegex)) {
           validationText.style.display = "block";
           validationText.innerHTML = "Please provide a valid email.";
+          btnSend.disabled = true;
         } else {
           validationText.style.display = "none";
+          btnSend.disabled = false;
         }
       }
     }
@@ -49,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         validationText.style.display = "none";
         validationText.innerHTML = "";
-
       }
 
       return isEmpty;
