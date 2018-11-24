@@ -34,10 +34,9 @@ textarea {
 
 .btn {
   background: $black;
-  background-image: $dark-gradient;
   color: $white;
   box-shadow: 2px 2px 5px #ccc;
-  transition: transform .5s ease-in-out;
+  transition: all .5s ease-in-out;
 
   a, span {
     font-size: 16px;
