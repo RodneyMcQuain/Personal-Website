@@ -5,26 +5,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let tfMessage = document.getElementById("message");
   let btnSend = document.getElementById("submit");
   let validationText = document.getElementById("validation-text")
+  let formInputElements = [tfName, tfEmail, tfSubject, tfMessage];
 
   addKeyUpListeners();
   addFocusOutListeners();
   addFocusInListeners();
 
   function addKeyUpListeners() {
-    tfName.addEventListener("keyup", e => {
-      keyUpEvent();
-    });
-
-    email.addEventListener("keyup", e => {
-      keyUpEvent();
-    });
-
-    tfSubject.addEventListener("keyup", e => {
-      keyUpEvent();
-    });
-
-    tfMessage.addEventListener("keyup", e => {
-      keyUpEvent();
+    formInputElements.map(formInputElement => {
+      formInputElement.addEventListener("keyup", e => { keyUpEvent(); });
     });
 
     function keyUpEvent() {
@@ -58,38 +47,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function addFocusOutListeners() {
-    tfName.addEventListener("focusout", e => {
-      validationText.style.display = "none";
-    });
-
-    tfEmail.addEventListener("focusout", e => {
-      validationText.style.display = "none";
-    });
-
-    tfSubject.addEventListener("focusout", e => {
-      validationText.style.display = "none";
-    });
-
-    tfMessage.addEventListener("focusout", e => {
-      validationText.style.display = "none";
+    formInputElements.map(formInputElement => {
+      formInputElement.addEventListener("focusout", e => { validationText.style.display = "none"; });
     });
   }
 
   function addFocusInListeners() {
-    tfName.addEventListener("focusin", e => {
-      focusInEvent();
-    });
-
-    tfEmail.addEventListener("focusin", e => {
-      focusInEvent();
-    });
-
-    tfSubject.addEventListener("focusin", e => {
-      focusInEvent();
-    });
-
-    tfMessage.addEventListener("focusin", e => {
-      focusInEvent();
+    formInputElements.map(formInputElement => {
+      formInputElement.addEventListener("focusin", e => { focusInEvent(); });
     });
 
     function focusInEvent() {
