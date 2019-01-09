@@ -29,6 +29,6 @@ gulp.task('watch:style', function() {
   gulp.watch('style/**/*.scss', gulp.series('pack-css'));
 });
 
-gulp.task('watch', gulp.parallel('watch:scripts', 'watch:styles'));
+gulp.task('watch', gulp.parallel('watch:scripts', 'watch:style'));
 
 gulp.task('default', gulp.series('watch'));
