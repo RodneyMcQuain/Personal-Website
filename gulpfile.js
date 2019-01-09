@@ -10,7 +10,7 @@ gulp.task('pack-js', function () {
   return gulp.src('scripts/*.js')
     .pipe(concat('allJavaScript.min.js'))
     .pipe(terser())
-    .pipe(gulp.dest('assets/scripts/'));
+    .pipe(gulp.dest('assets/scripts/js/'));
 });
 
 gulp.task('pack-css', function () {
