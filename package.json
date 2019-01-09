@@ -1,0 +1,26 @@
+{
+  "name": "PersonalWebsite",
+  "version": "1.0.0",
+  "description": "This is my personal website.  It gives some information about me, the education I've received, the projects I have completed, the skills I have obtained, and a way to contact me.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodneyMcQuain/Personal-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodneyMcQuain/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/RodneyMcQuain/Personal-Website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "gulp-terser": "^1.1.7"
+  }
+}
