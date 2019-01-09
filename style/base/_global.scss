@@ -54,6 +54,14 @@ textarea {
       color: $black;
     }
   }
+  
+  &:focus {
+    color: $white;
+
+    &:hover {
+        color: $black;
+    }
+  }
 }
 
 .dark-section {
