@@ -1,0 +1,36 @@
+#nav {
+  opacity: .95;
+}
+
+.navbar {
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+    li a, li a span span {
+      margin: 0;
+      font-size: 22px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+
+.navbar-right {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  border-bottom: 3px solid $white;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: $black;
+}
