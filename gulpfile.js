@@ -8,8 +8,8 @@ const watch = require('gulp-watch');
 
 const paths = {
   src: {
-    js: 'scripts/*.js',
-    css: 'style/**/*.scss'
+    js: 'src/scripts/js/*.js',
+    css: 'src/style/**/*.scss'
   },
   dest {
     js: 'assets/scripts/js/',
