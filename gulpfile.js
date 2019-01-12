@@ -10,11 +10,13 @@ const paths = {
   src: {
     vendorJs: 'src/scripts/js/vendor/*.js',
     js: 'src/scripts/js/*.js',
+    vendorCss: 'src/style/vendor/*.css',
     css: 'src/style/**/*.scss'
   },
   dest: {
     vendorJs: 'assets/scripts/js/vendor/',
     js: 'assets/scripts/js/',
+    vendorCss: 'assets/css/vendor/',
     css: 'assets/css/'
   }
 }
@@ -43,6 +45,13 @@ gulp.task('pack-css', function () {
     .pipe(cleanCss())
     .pipe(rename('allCss.min.css'))
     .pipe(gulp.dest(paths.dest.css));
+});
+
+gulp.task('pack-vendor-css', function () {
+  return gulp.src(paths.src.vendorCss)
+    .pipe(concat('vendorCss.min.css'))
+    .pipe(cleanCss())
+    .pipe(gulp.dest(paths.dest.vendorCss));
 });
 
 gulp.task('watch:scripts', function() {
