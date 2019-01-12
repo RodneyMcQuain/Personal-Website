@@ -8,10 +8,12 @@ const watch = require('gulp-watch');
 
 const paths = {
   src: {
+    vendorJs: 'src/scripts/js/vendor/*.js',
     js: 'src/scripts/js/*.js',
     css: 'src/style/**/*.scss'
   },
-  dest {
+  dest: {
+    vendorJs: 'assets/scripts/js/vendor/',
     js: 'assets/scripts/js/',
     css: 'assets/css/'
   }
@@ -22,6 +24,17 @@ gulp.task('pack-js', function () {
     .pipe(concat('allJavaScript.min.js'))
     .pipe(terser())
     .pipe(gulp.dest(paths.dest.js));
+});
+
+gulp.task('pack-vendor-js', function () {
+  return gulp.src([
+      'src/scripts/js/vendor/jquery-3.3.1.min.js',
+      'src/scripts/js/vendor/bootstrap-3.3.7.min.js',
+      paths.src.vendorJs
+    ])
+    .pipe(concat('vendorJavaScript.min.js'))
+    .pipe(terser())
+    .pipe(gulp.dest(paths.dest.vendorJs));
 });
 
 gulp.task('pack-css', function () {
