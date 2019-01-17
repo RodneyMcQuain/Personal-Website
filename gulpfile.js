@@ -3,6 +3,7 @@ const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 const sass = require('gulp-sass');
 const cleanCss = require('gulp-clean-css');
+const autoPrefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const watch = require('gulp-watch');
 
@@ -43,6 +44,10 @@ gulp.task('pack-css', function () {
   return gulp.src(paths.src.css)
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCss())
+    .pipe(autoPrefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(rename('allCss.min.css'))
     .pipe(gulp.dest(paths.dest.css));
 });
