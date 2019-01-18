@@ -1,5 +1,9 @@
+:root {
+  font-size: 6.25%;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 50rem;
   position: relative;
 }
 
@@ -15,13 +19,13 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 26rem;
   font-weight: bold;
 }
 
 p, span, div, a {
   text-align: center;
-  font-size: 20px;
+  font-size: 20rem;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -36,7 +40,7 @@ textarea {
   transition: all .5s ease-in-out;
 
   a, span {
-    font-size: 16px;
+    font-size: 16rem;
     color: $white;
   }
 
