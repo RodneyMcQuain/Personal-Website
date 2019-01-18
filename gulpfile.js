@@ -6,6 +6,7 @@ const cleanCss = require('gulp-clean-css');
 const autoPrefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const watch = require('gulp-watch');
+const unCss = require('gulp-uncss');
 
 const paths = {
   src: {
@@ -55,6 +56,7 @@ gulp.task('pack-css', function () {
 gulp.task('pack-vendor-css', function () {
   return gulp.src(paths.src.vendorCss)
     .pipe(concat('vendorCss.min.css'))
+    .pipe(unCss({ html: ['index.html'] }))
     .pipe(cleanCss())
     .pipe(gulp.dest(paths.dest.vendorCss));
 });
