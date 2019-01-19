@@ -7,19 +7,22 @@ const autoPrefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const watch = require('gulp-watch');
 const unCss = require('gulp-uncss');
+const webP = require('gulp-webp');
 
 const paths = {
   src: {
     vendorJs: 'src/scripts/js/vendor/*.js',
     js: 'src/scripts/js/*.js',
     vendorCss: 'src/style/vendor/*.css',
-    css: 'src/style/**/*.scss'
+    css: 'src/style/**/*.scss',
+    image: 'assets/images/*.jpg'
   },
   dest: {
     vendorJs: 'assets/scripts/js/vendor/',
     js: 'assets/scripts/js/',
     vendorCss: 'assets/css/vendor/',
-    css: 'assets/css/'
+    css: 'assets/css/',
+    image: 'assets/images/'
   }
 }
 
@@ -59,6 +62,12 @@ gulp.task('pack-vendor-css', function () {
     .pipe(unCss({ html: ['index.html'] }))
     .pipe(cleanCss())
     .pipe(gulp.dest(paths.dest.vendorCss));
+});
+
+gulp.task('convert-to-webp', function () {
+  return gulp.src(paths.src.image)
+    .pipe(webP())
+    .pipe(gulp.dest(paths.dest.image));
 });
 
 gulp.task('watch:scripts', function() {
