@@ -1,6 +1,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Work Sans';
+  font-display: block;
   font-style: normal;
   font-weight: 400;
   src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_cqDpp_k.woff2) format('woff2');
@@ -9,6 +10,7 @@
 /* latin */
 @font-face {
   font-family: 'Work Sans';
+  font-display: block;
   font-style: normal;
   font-weight: 400;
   src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
