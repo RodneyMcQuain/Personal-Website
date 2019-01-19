@@ -1,10 +1,22 @@
-#banner-img {
+.webp #banner-img {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/code.webp);
+}
+
+.no-webp #banner-img {
   background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url(../images/code.jpg);
+}
+
+#banner-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +40,16 @@
 }
 
 @media (max-width: 900px) {
-  #banner-img {
+  .webp #banner-img {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../images/code-sm.webp);
+  }
+
+  .no-webp #banner-img {
     background-image:
       linear-gradient(
         rgba(0, 0, 0, 0.5),
