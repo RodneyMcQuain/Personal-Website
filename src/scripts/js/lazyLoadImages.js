@@ -1,11 +1,14 @@
 window.addEventListener("load", function() {
   let images = document.getElementsByTagName("img");
 
-  for (let i = 0; i < images.length; i++) {
-    let dataSrc = images[i].getAttribute("data-src");
+  Modernizr.on('webp', function(result) {
+    const imageExtension = result ? ".webp" : ".jpg";
 
-    if (dataSrc) {
-      images[i].setAttribute("src", dataSrc);
+    for (let i = 0; i < images.length; i++) {
+      let dataSrc = images[i].getAttribute("data-src");
+
+      if (dataSrc)
+        images[i].setAttribute("src", dataSrc + imageExtension);
     }
-  }
+  });
 }, false);
