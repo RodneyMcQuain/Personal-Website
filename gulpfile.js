@@ -59,7 +59,10 @@ gulp.task('pack-css', function () {
 gulp.task('pack-vendor-css', function () {
   return gulp.src(paths.src.vendorCss)
     .pipe(concat('vendorCss.min.css'))
-    .pipe(unCss({ html: ['index.html'] }))
+    .pipe(unCss({ 
+      ignore: [/\.fa-angle-double-up/],
+      html: ['index.html']
+    }))
     .pipe(cleanCss())
     .pipe(gulp.dest(paths.dest.vendorCss));
 });
