@@ -15,7 +15,7 @@ const paths = {
     js: 'src/scripts/js/*.js',
     vendorCss: 'src/style/vendor/*.css',
     css: 'src/style/**/*.scss',
-    image: 'assets/images/*.jpg'
+    image: 'src/images/*.jpg'
   },
   dest: {
     vendorJs: 'assets/scripts/js/vendor/',
