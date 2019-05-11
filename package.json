@@ -17,15 +17,15 @@
   },
   "homepage": "https://github.com/RodneyMcQuain/Personal-Website#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uncss": "^1.0.6",
     "gulp-watch": "^5.0.1",
-    "gulp-webp": "^4.0.0"
+    "gulp-webp": "^4.0.1"
   },
   "dependencies": {
     "gulp-terser": "^1.1.7"
