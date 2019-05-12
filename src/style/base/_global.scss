@@ -82,8 +82,9 @@ a {
 }
 
 .-curved-border {
-  border-radius: 2.5%;
+  border-radius: 10px;
   box-shadow: 4px 4px 10px #ccc;
+  overflow: hidden;
 }
 
 .-top-margin {
@@ -119,8 +120,7 @@ a {
 
 .container-top-image {
   max-width: 100%;
-  border-top-left-radius: 2.5%;
-  border-top-right-radius: 2.5%;
+  width: 100%;
   border-bottom: 2px solid $darker-white;
 }
 
