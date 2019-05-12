@@ -21,13 +21,12 @@
 .language-tag {
   span {
     padding: 4px;
-    border-radius: 15%;
+    border-radius: 5px;
     border: 1px solid $darker-white;
     font-size: 12rem;
   }
 
   div {
-    padding-top: 10px;
     border: none;
   }
 }
