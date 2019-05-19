@@ -4,14 +4,18 @@
 
 .navbar {
   .navbar-nav {
-    display: inline-block;
+    padding: 0;
+    margin: 0;
     float: none;
-    vertical-align: top;
 
     li a, li a span span {
-      margin: 0;
       font-size: 22rem;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      color: $white;
+    }
+ 
+    li:last-child {
+      margin-left: auto;
     }
   }
 
@@ -20,9 +24,34 @@
   }
 }
 
-.navbar-right {
-  margin-left: 10px;
-  margin-right: 10px;
+ul.navbar-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '---Resume';
+    margin-right: auto;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.navbar-nav {
+    display: block;
+
+    &::before {
+      content: '';
+      margin-right: 0;
+    }
+  }
+
+  li:last-child {
+    margin-left: 0;
+  }
 }
 
 .active {
