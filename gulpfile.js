@@ -60,7 +60,7 @@ gulp.task('pack-vendor-css', function () {
   return gulp.src(paths.src.vendorCss)
     .pipe(concat('vendorCss.min.css'))
     .pipe(unCss({ 
-      ignore: [/\.fa-angle-double-up/],
+      ignore: [/\.fa-angle-double-up|.in/],
       html: ['index.html']
     }))
     .pipe(cleanCss())
