@@ -4,7 +4,9 @@
   "description": "This is my personal website.  It gives some information about me, the education I've received, the projects I have completed, the skills I have obtained, and a way to contact me.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open",
+    "cypress:all": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "gulp-webp": "^4.0.1"
   },
   "dependencies": {
+    "cypress": "^3.3.1",
     "gulp-terser": "^1.1.7"
   }
 }
