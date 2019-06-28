@@ -1,9 +1,15 @@
-div.technologies {
-  padding: 10px;
-
-  &:before {
-    content: "⁍ ";
-  }
+ul.technologies {
+  margin: 0;
+  padding: 0;
+  
+  li {
+    padding: 10px;
+    list-style: none;
+    
+    &:before {
+      content: "⁍ ";
+    }
+  }  
 }
 
 .hidden-technology-row {
