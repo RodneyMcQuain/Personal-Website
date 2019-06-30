@@ -18,15 +18,15 @@
   @include unhide();
 }
 
-.language-tag {
-  span {
+ul.language-tag {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
     padding: 4px;
     border-radius: 5px;
     border: 1px solid $darker-white;
     font-size: 12rem;
-  }
-
-  div {
-    border: none;
   }
 }
