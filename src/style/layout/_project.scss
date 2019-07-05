@@ -6,18 +6,6 @@
   }
 }
 
-.hidden-project-row {
-  padding-top: 10px;
-}
-
-.hidden-project-row {
-  @include hide();
-}
-
-.hidden-project-row.unhidden {
-  @include unhide();
-}
-
 ul.language-tag {
   margin: 0;
   padding: 0;
